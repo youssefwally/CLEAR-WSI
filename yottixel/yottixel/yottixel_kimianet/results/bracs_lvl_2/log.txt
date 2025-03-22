@@ -1,0 +1,193 @@
+INFO 2025-01-21 16:41:32,122 run_yottixel.py <module> 91 logger created
+INFO 2025-01-21 16:41:32,122 run_yottixel.py <module> 95 Starting the pipeline at Tue Jan 21 16:41:32 2025
+INFO 2025-01-21 16:41:32,122 run_yottixel.py <module> 105 Slide 1 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_264.svsTotal Elapsed Time: 0 minutes
+DEBUG 2025-01-21 16:41:58,809 attrs.py __getitem__ 78 Creating converter from 3 to 5
+INFO 2025-01-21 16:44:14,743 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_264.svs saved
+INFO 2025-01-21 16:44:14,743 run_yottixel.py <module> 105 Slide 2 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_286.svsTotal Elapsed Time: 3 minutes
+INFO 2025-01-21 16:46:29,237 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_286.svs saved
+INFO 2025-01-21 16:46:29,237 run_yottixel.py <module> 105 Slide 3 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_292.svsTotal Elapsed Time: 5 minutes
+INFO 2025-01-21 16:48:06,667 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_292.svs saved
+INFO 2025-01-21 16:48:06,667 run_yottixel.py <module> 105 Slide 4 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_300.svsTotal Elapsed Time: 7 minutes
+INFO 2025-01-21 16:49:48,909 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_300.svs saved
+INFO 2025-01-21 16:49:48,909 run_yottixel.py <module> 105 Slide 5 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_301.svsTotal Elapsed Time: 8 minutes
+INFO 2025-01-21 16:52:38,400 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_301.svs saved
+INFO 2025-01-21 16:52:38,400 run_yottixel.py <module> 105 Slide 6 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_305.svsTotal Elapsed Time: 11 minutes
+INFO 2025-01-21 16:54:28,198 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_305.svs saved
+INFO 2025-01-21 16:54:28,198 run_yottixel.py <module> 105 Slide 7 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_310.svsTotal Elapsed Time: 13 minutes
+INFO 2025-01-21 16:56:28,059 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_310.svs saved
+INFO 2025-01-21 16:56:28,059 run_yottixel.py <module> 105 Slide 8 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1228.svsTotal Elapsed Time: 15 minutes
+INFO 2025-01-21 16:58:21,568 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1228.svs saved
+INFO 2025-01-21 16:58:21,568 run_yottixel.py <module> 105 Slide 9 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1283.svsTotal Elapsed Time: 17 minutes
+INFO 2025-01-21 17:00:10,530 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1283.svs saved
+INFO 2025-01-21 17:00:10,530 run_yottixel.py <module> 105 Slide 10 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1284.svsTotal Elapsed Time: 19 minutes
+INFO 2025-01-21 17:02:10,032 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1284.svs saved
+INFO 2025-01-21 17:02:10,032 run_yottixel.py <module> 105 Slide 11 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1286.svsTotal Elapsed Time: 21 minutes
+INFO 2025-01-21 17:04:30,777 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1286.svs saved
+INFO 2025-01-21 17:04:30,777 run_yottixel.py <module> 105 Slide 12 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1330.svsTotal Elapsed Time: 23 minutes
+INFO 2025-01-21 17:07:22,474 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1330.svs saved
+INFO 2025-01-21 17:07:22,474 run_yottixel.py <module> 105 Slide 13 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1334.svsTotal Elapsed Time: 26 minutes
+INFO 2025-01-21 17:09:34,224 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1334.svs saved
+INFO 2025-01-21 17:09:34,224 run_yottixel.py <module> 105 Slide 14 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1411.svsTotal Elapsed Time: 28 minutes
+INFO 2025-01-21 17:11:22,072 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1411.svs saved
+INFO 2025-01-21 17:11:22,072 run_yottixel.py <module> 105 Slide 15 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1412.svsTotal Elapsed Time: 30 minutes
+INFO 2025-01-21 17:13:01,095 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1412.svs saved
+INFO 2025-01-21 17:13:01,095 run_yottixel.py <module> 105 Slide 16 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1413.svsTotal Elapsed Time: 31 minutes
+INFO 2025-01-21 17:15:20,364 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1413.svs saved
+INFO 2025-01-21 17:15:20,364 run_yottixel.py <module> 105 Slide 17 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1414.svsTotal Elapsed Time: 34 minutes
+INFO 2025-01-21 17:17:39,862 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1414.svs saved
+INFO 2025-01-21 17:17:39,862 run_yottixel.py <module> 105 Slide 18 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1416.svsTotal Elapsed Time: 36 minutes
+INFO 2025-01-21 17:20:08,025 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1416.svs saved
+INFO 2025-01-21 17:20:08,025 run_yottixel.py <module> 105 Slide 19 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1473.svsTotal Elapsed Time: 39 minutes
+INFO 2025-01-21 17:21:43,607 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1473.svs saved
+INFO 2025-01-21 17:21:43,607 run_yottixel.py <module> 105 Slide 20 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1474.svsTotal Elapsed Time: 40 minutes
+INFO 2025-01-21 17:23:38,044 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1474.svs saved
+INFO 2025-01-21 17:23:38,044 run_yottixel.py <module> 105 Slide 21 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1476.svsTotal Elapsed Time: 42 minutes
+INFO 2025-01-21 17:25:55,734 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1476.svs saved
+INFO 2025-01-21 17:25:55,734 run_yottixel.py <module> 105 Slide 22 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1503.svsTotal Elapsed Time: 44 minutes
+INFO 2025-01-21 17:27:40,564 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1503.svs saved
+INFO 2025-01-21 17:27:40,564 run_yottixel.py <module> 105 Slide 23 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1578.svsTotal Elapsed Time: 46 minutes
+INFO 2025-01-21 17:29:37,288 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1578.svs saved
+INFO 2025-01-21 17:29:37,288 run_yottixel.py <module> 105 Slide 24 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1579.svsTotal Elapsed Time: 48 minutes
+INFO 2025-01-21 17:31:11,929 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1579.svs saved
+INFO 2025-01-21 17:31:11,929 run_yottixel.py <module> 105 Slide 25 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1580.svsTotal Elapsed Time: 50 minutes
+INFO 2025-01-21 17:33:08,051 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1580.svs saved
+INFO 2025-01-21 17:33:08,051 run_yottixel.py <module> 105 Slide 26 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1587.svsTotal Elapsed Time: 52 minutes
+INFO 2025-01-21 17:34:49,328 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1587.svs saved
+INFO 2025-01-21 17:34:49,328 run_yottixel.py <module> 105 Slide 27 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1588.svsTotal Elapsed Time: 53 minutes
+INFO 2025-01-21 17:37:23,865 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1588.svs saved
+INFO 2025-01-21 17:37:23,865 run_yottixel.py <module> 105 Slide 28 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1589.svsTotal Elapsed Time: 56 minutes
+INFO 2025-01-21 17:39:32,900 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1589.svs saved
+INFO 2025-01-21 17:39:32,900 run_yottixel.py <module> 105 Slide 29 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1590.svsTotal Elapsed Time: 58 minutes
+INFO 2025-01-21 17:41:54,333 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1590.svs saved
+INFO 2025-01-21 17:41:54,333 run_yottixel.py <module> 105 Slide 30 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1597.svsTotal Elapsed Time: 60 minutes
+INFO 2025-01-21 17:43:17,014 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1597.svs saved
+INFO 2025-01-21 17:43:17,015 run_yottixel.py <module> 105 Slide 31 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1598.svsTotal Elapsed Time: 62 minutes
+INFO 2025-01-21 17:44:38,876 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1598.svs saved
+INFO 2025-01-21 17:44:38,876 run_yottixel.py <module> 105 Slide 32 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1599.svsTotal Elapsed Time: 63 minutes
+ERROR 2025-01-21 17:44:39,590 run_yottixel.py <module> 122 Error in slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1599.svs, The 'n_clusters' parameter of KMeans must be an int in the range [1, inf). Got 0 instead.
+INFO 2025-01-21 17:44:39,590 run_yottixel.py <module> 105 Slide 33 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1601.svsTotal Elapsed Time: 63 minutes
+ERROR 2025-01-21 17:44:39,989 run_yottixel.py <module> 122 Error in slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1601.svs, The 'n_clusters' parameter of KMeans must be an int in the range [1, inf). Got 0 instead.
+INFO 2025-01-21 17:44:39,989 run_yottixel.py <module> 105 Slide 34 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1602.svsTotal Elapsed Time: 63 minutes
+INFO 2025-01-21 17:46:18,481 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1602.svs saved
+INFO 2025-01-21 17:46:18,481 run_yottixel.py <module> 105 Slide 35 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1619.svsTotal Elapsed Time: 65 minutes
+INFO 2025-01-21 17:47:59,683 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1619.svs saved
+INFO 2025-01-21 17:47:59,683 run_yottixel.py <module> 105 Slide 36 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1813.svsTotal Elapsed Time: 66 minutes
+INFO 2025-01-21 17:50:47,281 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1813.svs saved
+INFO 2025-01-21 17:50:47,281 run_yottixel.py <module> 105 Slide 37 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1814.svsTotal Elapsed Time: 69 minutes
+INFO 2025-01-21 17:53:28,870 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1814.svs saved
+INFO 2025-01-21 17:53:28,870 run_yottixel.py <module> 105 Slide 38 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1817.svsTotal Elapsed Time: 72 minutes
+INFO 2025-01-21 17:55:40,623 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1817.svs saved
+INFO 2025-01-21 17:55:40,623 run_yottixel.py <module> 105 Slide 39 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1820.svsTotal Elapsed Time: 74 minutes
+INFO 2025-01-21 17:56:50,869 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1820.svs saved
+INFO 2025-01-21 17:56:50,869 run_yottixel.py <module> 105 Slide 40 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1821.svsTotal Elapsed Time: 75 minutes
+INFO 2025-01-21 17:58:57,608 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1821.svs saved
+INFO 2025-01-21 17:58:57,608 run_yottixel.py <module> 105 Slide 41 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1823.svsTotal Elapsed Time: 77 minutes
+INFO 2025-01-21 18:00:56,181 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1823.svs saved
+INFO 2025-01-21 18:00:56,181 run_yottixel.py <module> 105 Slide 42 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1824.svsTotal Elapsed Time: 79 minutes
+INFO 2025-01-21 18:02:32,250 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1824.svs saved
+INFO 2025-01-21 18:02:32,251 run_yottixel.py <module> 105 Slide 43 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1825.svsTotal Elapsed Time: 81 minutes
+INFO 2025-01-21 18:05:00,397 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1825.svs saved
+INFO 2025-01-21 18:05:00,397 run_yottixel.py <module> 105 Slide 44 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1826.svsTotal Elapsed Time: 83 minutes
+INFO 2025-01-21 18:07:42,543 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1826.svs saved
+INFO 2025-01-21 18:07:42,543 run_yottixel.py <module> 105 Slide 45 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1842.svsTotal Elapsed Time: 86 minutes
+INFO 2025-01-21 18:10:35,055 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1842.svs saved
+INFO 2025-01-21 18:10:35,055 run_yottixel.py <module> 105 Slide 46 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1843.svsTotal Elapsed Time: 89 minutes
+INFO 2025-01-21 18:13:04,343 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1843.svs saved
+INFO 2025-01-21 18:13:04,344 run_yottixel.py <module> 105 Slide 47 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1844.svsTotal Elapsed Time: 92 minutes
+INFO 2025-01-21 18:15:48,784 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1844.svs saved
+INFO 2025-01-21 18:15:48,784 run_yottixel.py <module> 105 Slide 48 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1845.svsTotal Elapsed Time: 94 minutes
+INFO 2025-01-21 18:19:04,024 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1845.svs saved
+INFO 2025-01-21 18:19:04,024 run_yottixel.py <module> 105 Slide 49 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1846.svsTotal Elapsed Time: 98 minutes
+INFO 2025-01-21 18:21:04,347 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1846.svs saved
+INFO 2025-01-21 18:21:04,347 run_yottixel.py <module> 105 Slide 50 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1847.svsTotal Elapsed Time: 100 minutes
+INFO 2025-01-21 18:23:05,950 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1847.svs saved
+INFO 2025-01-21 18:23:05,950 run_yottixel.py <module> 105 Slide 51 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1848.svsTotal Elapsed Time: 102 minutes
+INFO 2025-01-21 18:25:52,956 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1848.svs saved
+INFO 2025-01-21 18:25:52,956 run_yottixel.py <module> 105 Slide 52 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1849.svsTotal Elapsed Time: 104 minutes
+INFO 2025-01-21 18:28:37,565 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1849.svs saved
+INFO 2025-01-21 18:28:37,565 run_yottixel.py <module> 105 Slide 53 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1850.svsTotal Elapsed Time: 107 minutes
+INFO 2025-01-21 18:30:12,815 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1850.svs saved
+INFO 2025-01-21 18:30:12,815 run_yottixel.py <module> 105 Slide 54 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1851.svsTotal Elapsed Time: 109 minutes
+INFO 2025-01-21 18:33:04,226 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1851.svs saved
+INFO 2025-01-21 18:33:04,226 run_yottixel.py <module> 105 Slide 55 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1852.svsTotal Elapsed Time: 112 minutes
+INFO 2025-01-21 18:35:58,775 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1852.svs saved
+INFO 2025-01-21 18:35:58,775 run_yottixel.py <module> 105 Slide 56 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1853.svsTotal Elapsed Time: 114 minutes
+INFO 2025-01-21 18:38:07,725 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1853.svs saved
+INFO 2025-01-21 18:38:07,725 run_yottixel.py <module> 105 Slide 57 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1855.svsTotal Elapsed Time: 117 minutes
+INFO 2025-01-21 18:41:36,887 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1855.svs saved
+INFO 2025-01-21 18:41:36,888 run_yottixel.py <module> 105 Slide 58 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1856.svsTotal Elapsed Time: 120 minutes
+INFO 2025-01-21 18:45:35,643 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1856.svs saved
+INFO 2025-01-21 18:45:35,643 run_yottixel.py <module> 105 Slide 59 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1867.svsTotal Elapsed Time: 124 minutes
+INFO 2025-01-21 18:47:23,843 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1867.svs saved
+INFO 2025-01-21 18:47:23,843 run_yottixel.py <module> 105 Slide 60 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1870.svsTotal Elapsed Time: 126 minutes
+INFO 2025-01-21 18:49:24,656 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1870.svs saved
+INFO 2025-01-21 18:49:24,656 run_yottixel.py <module> 105 Slide 61 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1872.svsTotal Elapsed Time: 128 minutes
+INFO 2025-01-21 18:51:09,005 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1872.svs saved
+INFO 2025-01-21 18:51:09,005 run_yottixel.py <module> 105 Slide 62 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1878.svsTotal Elapsed Time: 130 minutes
+INFO 2025-01-21 18:52:56,481 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1878.svs saved
+INFO 2025-01-21 18:52:56,481 run_yottixel.py <module> 105 Slide 63 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1892.svsTotal Elapsed Time: 131 minutes
+INFO 2025-01-21 18:55:02,319 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1892.svs saved
+INFO 2025-01-21 18:55:02,320 run_yottixel.py <module> 105 Slide 64 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1895.svsTotal Elapsed Time: 134 minutes
+INFO 2025-01-21 18:56:25,099 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1895.svs saved
+INFO 2025-01-21 18:56:25,099 run_yottixel.py <module> 105 Slide 65 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1896.svsTotal Elapsed Time: 135 minutes
+INFO 2025-01-21 18:58:06,816 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1896.svs saved
+INFO 2025-01-21 18:58:06,816 run_yottixel.py <module> 105 Slide 66 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1897.svsTotal Elapsed Time: 137 minutes
+INFO 2025-01-21 18:59:49,253 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1897.svs saved
+INFO 2025-01-21 18:59:49,253 run_yottixel.py <module> 105 Slide 67 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1906.svsTotal Elapsed Time: 138 minutes
+INFO 2025-01-21 19:02:10,418 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1906.svs saved
+INFO 2025-01-21 19:02:10,419 run_yottixel.py <module> 105 Slide 68 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1908.svsTotal Elapsed Time: 141 minutes
+INFO 2025-01-21 19:04:27,759 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1908.svs saved
+INFO 2025-01-21 19:04:27,759 run_yottixel.py <module> 105 Slide 69 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1910.svsTotal Elapsed Time: 143 minutes
+INFO 2025-01-21 19:06:43,533 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1910.svs saved
+INFO 2025-01-21 19:06:43,533 run_yottixel.py <module> 105 Slide 70 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1936.svsTotal Elapsed Time: 145 minutes
+INFO 2025-01-21 19:09:08,328 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1936.svs saved
+INFO 2025-01-21 19:09:08,328 run_yottixel.py <module> 105 Slide 71 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1937.svsTotal Elapsed Time: 148 minutes
+INFO 2025-01-21 19:11:23,889 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1937.svs saved
+INFO 2025-01-21 19:11:23,889 run_yottixel.py <module> 105 Slide 72 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1938.svsTotal Elapsed Time: 150 minutes
+INFO 2025-01-21 19:13:03,302 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1938.svs saved
+INFO 2025-01-21 19:13:03,303 run_yottixel.py <module> 105 Slide 73 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1940.svsTotal Elapsed Time: 152 minutes
+INFO 2025-01-21 19:14:37,568 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1940.svs saved
+INFO 2025-01-21 19:14:37,569 run_yottixel.py <module> 105 Slide 74 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1941.svsTotal Elapsed Time: 153 minutes
+INFO 2025-01-21 19:16:08,599 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1941.svs saved
+INFO 2025-01-21 19:16:08,601 run_yottixel.py <module> 105 Slide 75 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1942.svsTotal Elapsed Time: 155 minutes
+INFO 2025-01-21 19:17:23,966 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1942.svs saved
+INFO 2025-01-21 19:17:23,966 run_yottixel.py <module> 105 Slide 76 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1943.svsTotal Elapsed Time: 156 minutes
+INFO 2025-01-21 19:18:55,953 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1943.svs saved
+INFO 2025-01-21 19:18:55,953 run_yottixel.py <module> 105 Slide 77 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1944.svsTotal Elapsed Time: 157 minutes
+INFO 2025-01-21 19:20:21,133 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1944.svs saved
+INFO 2025-01-21 19:20:21,133 run_yottixel.py <module> 105 Slide 78 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1945.svsTotal Elapsed Time: 159 minutes
+INFO 2025-01-21 19:22:16,922 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1945.svs saved
+INFO 2025-01-21 19:22:16,922 run_yottixel.py <module> 105 Slide 79 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1952.svsTotal Elapsed Time: 161 minutes
+INFO 2025-01-21 19:23:42,784 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1952.svs saved
+INFO 2025-01-21 19:23:42,784 run_yottixel.py <module> 105 Slide 80 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1954.svsTotal Elapsed Time: 162 minutes
+INFO 2025-01-21 19:25:20,641 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1954.svs saved
+INFO 2025-01-21 19:25:20,641 run_yottixel.py <module> 105 Slide 81 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1955.svsTotal Elapsed Time: 164 minutes
+INFO 2025-01-21 19:27:09,617 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1955.svs saved
+INFO 2025-01-21 19:27:09,617 run_yottixel.py <module> 105 Slide 82 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_2007.svsTotal Elapsed Time: 166 minutes
+INFO 2025-01-21 19:28:50,997 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_2007.svs saved
+INFO 2025-01-21 19:28:50,997 run_yottixel.py <module> 105 Slide 83 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3322.svsTotal Elapsed Time: 167 minutes
+INFO 2025-01-21 19:30:41,532 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3322.svs saved
+INFO 2025-01-21 19:30:41,533 run_yottixel.py <module> 105 Slide 84 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3323.svsTotal Elapsed Time: 169 minutes
+INFO 2025-01-21 19:32:39,030 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3323.svs saved
+INFO 2025-01-21 19:32:39,031 run_yottixel.py <module> 105 Slide 85 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3324.svsTotal Elapsed Time: 171 minutes
+INFO 2025-01-21 19:34:39,278 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_3324.svs saved
+INFO 2025-01-21 19:34:39,278 run_yottixel.py <module> 105 Slide 86 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1003691.svsTotal Elapsed Time: 173 minutes
+INFO 2025-01-21 19:36:46,221 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1003691.svs saved
+INFO 2025-01-21 19:36:46,221 run_yottixel.py <module> 105 Slide 87 / 87 - /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1003694.svsTotal Elapsed Time: 175 minutes
+INFO 2025-01-21 19:38:23,084 run_yottixel.py <module> 115 Bob object for slide /mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1003694.svs saved
+INFO 2025-01-21 19:38:23,084 run_yottixel.py <module> 132 Starting the leave one out testing for 1
+INFO 2025-01-21 19:39:06,439 run_yottixel.py <module> 135 Leave one out testing done for 1
+INFO 2025-01-21 19:39:06,441 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2025-01-21 19:39:06,447 run_yottixel.py <module> 176 Report created
+INFO 2025-01-21 19:39:06,447 run_yottixel.py <module> 181 Report saved for top 1
+INFO 2025-01-21 19:39:06,447 run_yottixel.py <module> 132 Starting the leave one out testing for 3
+INFO 2025-01-21 19:39:47,119 run_yottixel.py <module> 135 Leave one out testing done for 3
+INFO 2025-01-21 19:39:47,121 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2025-01-21 19:39:47,127 run_yottixel.py <module> 176 Report created
+INFO 2025-01-21 19:39:47,128 run_yottixel.py <module> 181 Report saved for top 3
+INFO 2025-01-21 19:39:47,128 run_yottixel.py <module> 132 Starting the leave one out testing for 5
+INFO 2025-01-21 19:40:24,122 run_yottixel.py <module> 135 Leave one out testing done for 5
+INFO 2025-01-21 19:40:24,124 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2025-01-21 19:40:24,129 run_yottixel.py <module> 176 Report created
+INFO 2025-01-21 19:40:24,129 run_yottixel.py <module> 181 Report saved for top 5
+INFO 2025-01-21 19:40:24,129 run_yottixel.py <module> 184 Ending the pipeline at Tue Jan 21 19:40:24 2025

@@ -1,0 +1,43 @@
+Parameters:
+wsi_folder: /mnt/nfs03-R6/BRACS/BRACS_WSI/all/
+csv_file: bracs_yottixel_data.csv
+output_folder: ./results/
+kmeans_clusters: 9
+tissue_threshold: 0.7
+percentage_selected: 5
+batch_size: 512
+top_n: 1
+gpu: 2
+Indexing Elapsed Time in minutes: 112 minutes
+Indexing Elapsed Time in seconds: 6704.61 seconds
+Searching Elapsed Time in minutes for top 1: 1 minutes
+Searching Elapsed Time in seconds for top 1: 39.71 seconds
+Confusion Matrix:
+[[ 2  3  2  3  1  1  0]
+ [ 1  5  2  1  0  1  2]
+ [ 1  2  6  1  0  1  0]
+ [ 1  1  2 14  0  2  0]
+ [ 0  0  1  1  0  2  1]
+ [ 7  0  1  3  2  1  2]
+ [ 2  4  0  1  1  1  0]]
+Labels:
+['ADH' 'DCIS' 'FEA' 'IC' 'N' 'PB' 'UDH']
+Classification Report:
+              precision    recall  f1-score   support
+
+         ADH       0.14      0.17      0.15        12
+        DCIS       0.33      0.42      0.37        12
+         FEA       0.43      0.55      0.48        11
+          IC       0.58      0.70      0.64        20
+           N       0.00      0.00      0.00         5
+          PB       0.11      0.06      0.08        16
+         UDH       0.00      0.00      0.00         9
+
+    accuracy                           0.33        85
+   macro avg       0.23      0.27      0.25        85
+weighted avg       0.28      0.33      0.30        85
+
+Our Mertrics:
+{'percision': 0.33941176470588336, 'recall': 0.33941176470588336, 'NDCG': 0.3360512521840414, 'f1': 0.33941176470588336, 'correct_majority_vote': 0.32941176470588235}
+Errors:
+[('/mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1599.svs', InvalidParameterError("The 'n_clusters' parameter of KMeans must be an int in the range [1, inf). Got 0 instead.")), ('/mnt/nfs03-R6/BRACS/BRACS_WSI/all/BRACS_1601.svs', InvalidParameterError("The 'n_clusters' parameter of KMeans must be an int in the range [1, inf). Got 0 instead."))]

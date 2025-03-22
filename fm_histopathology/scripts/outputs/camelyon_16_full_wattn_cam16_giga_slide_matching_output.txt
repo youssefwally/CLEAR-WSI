@@ -1,0 +1,16 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_gigapath_attn --data camelyon_16 --wsi --agg attn --gigapath
+Output:
+Namespace(model_name='camelyon_16_gigapath_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='attn', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.7464341085271331} {0.7464341085271331} {0.7464341085271331} {0.7390436718090417} {0.7364341085271318}
+3: {0.6829198966408265} {0.6829198966408265} {0.6829198966408265} {0.6940434913649279} {0.7054263565891473}
+5: {0.6469612403100778} {0.6469612403100778} {0.6469612403100778} {0.6657260388727646} {0.6666666666666666}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 76%|███████▌  | 98/129 [00:00<00:00, 979.26it/s]
+100%|██████████| 129/129 [00:00<00:00, 968.49it/s]
+
+----------------------------------------

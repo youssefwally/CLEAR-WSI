@@ -1,0 +1,3116 @@
+Running command: python ./slide_matching.py --model-name deit_tiny_patch16_224 --data wss --scratch True
+Output:
+Namespace(model_name='deit_tiny_patch16_224', k=5, search_image_index=0, scratch='True', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:21  loss: 0.9825 (0.9825)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 7.3049  data: 1.2468  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:05  loss: 1.4223 (1.2980)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 5.0758  data: 0.4157  max mem: 0
+Similarity Test: Total time: 0:00:15 (5.1034 s / it)
+469
+{0.783987206823022} {0.783987206823022} {0.783987206823022} {0.7762249572505232} {0.7739872068230277}
+{0.768081023454156} {0.768081023454156} {0.768081023454156} {0.7688301897527604} {0.814498933901919}
+{0.74784221748401} {0.74784221748401} {0.74784221748401} {0.7550046002414726} {0.8123667377398721}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 6/469 [00:00<00:08, 52.31it/s]
+  3%|▎         | 12/469 [00:00<00:08, 55.76it/s]
+  4%|▍         | 18/469 [00:00<00:09, 48.12it/s]
+  5%|▌         | 24/469 [00:00<00:08, 50.48it/s]
+  6%|▋         | 30/469 [00:00<00:09, 46.83it/s]
+  7%|▋         | 35/469 [00:00<00:09, 47.23it/s]
+  9%|▊         | 40/469 [00:00<00:09, 44.46it/s]
+ 10%|▉         | 45/469 [00:00<00:09, 45.86it/s]
+ 11%|█         | 51/469 [00:01<00:08, 49.03it/s]
+ 12%|█▏        | 58/469 [00:01<00:07, 54.52it/s]
+ 14%|█▍        | 66/469 [00:01<00:06, 60.11it/s]
+ 16%|█▌        | 74/469 [00:01<00:06, 63.07it/s]
+ 17%|█▋        | 82/469 [00:01<00:05, 65.74it/s]
+ 19%|█▉        | 90/469 [00:01<00:05, 68.60it/s]
+ 21%|██        | 97/469 [00:01<00:05, 68.71it/s]
+ 22%|██▏       | 105/469 [00:01<00:05, 70.02it/s]
+ 24%|██▍       | 113/469 [00:01<00:05, 68.65it/s]
+ 26%|██▌       | 120/469 [00:02<00:05, 66.61it/s]
+ 27%|██▋       | 127/469 [00:02<00:05, 63.36it/s]
+ 29%|██▉       | 135/469 [00:02<00:05, 65.54it/s]
+ 30%|███       | 142/469 [00:02<00:04, 66.48it/s]
+ 32%|███▏      | 150/469 [00:02<00:04, 67.67it/s]
+ 34%|███▎      | 158/469 [00:02<00:04, 68.53it/s]
+ 35%|███▌      | 165/469 [00:02<00:04, 67.11it/s]
+ 37%|███▋      | 173/469 [00:02<00:04, 69.68it/s]
+ 38%|███▊      | 180/469 [00:02<00:04, 69.45it/s]
+ 40%|████      | 188/469 [00:03<00:03, 70.88it/s]
+ 42%|████▏     | 196/469 [00:03<00:03, 72.03it/s]
+ 43%|████▎     | 204/469 [00:03<00:03, 72.17it/s]
+ 45%|████▌     | 212/469 [00:03<00:03, 70.02it/s]
+ 47%|████▋     | 220/469 [00:03<00:03, 70.64it/s]
+ 49%|████▊     | 228/469 [00:03<00:03, 69.37it/s]
+ 50%|█████     | 235/469 [00:03<00:03, 66.36it/s]
+ 52%|█████▏    | 242/469 [00:03<00:03, 67.09it/s]
+ 53%|█████▎    | 249/469 [00:03<00:03, 67.78it/s]
+ 55%|█████▍    | 256/469 [00:04<00:03, 67.55it/s]
+ 56%|█████▌    | 263/469 [00:04<00:03, 66.72it/s]
+ 58%|█████▊    | 270/469 [00:04<00:02, 66.66it/s]
+ 59%|█████▉    | 278/469 [00:04<00:02, 68.63it/s]
+ 61%|██████    | 285/469 [00:04<00:02, 67.05it/s]
+ 62%|██████▏   | 292/469 [00:04<00:02, 67.29it/s]
+ 64%|██████▍   | 299/469 [00:04<00:02, 64.74it/s]
+ 65%|██████▌   | 306/469 [00:04<00:02, 62.59it/s]
+ 67%|██████▋   | 313/469 [00:04<00:02, 60.39it/s]
+ 68%|██████▊   | 321/469 [00:05<00:02, 63.94it/s]
+ 70%|██████▉   | 328/469 [00:05<00:02, 62.91it/s]
+ 71%|███████▏  | 335/469 [00:05<00:02, 61.12it/s]
+ 73%|███████▎  | 342/469 [00:05<00:02, 61.29it/s]
+ 75%|███████▍  | 350/469 [00:05<00:01, 64.57it/s]
+ 76%|███████▌  | 357/469 [00:05<00:01, 64.37it/s]
+ 78%|███████▊  | 364/469 [00:05<00:01, 63.42it/s]
+ 79%|███████▉  | 371/469 [00:05<00:01, 62.74it/s]
+ 81%|████████  | 378/469 [00:05<00:01, 63.66it/s]
+ 82%|████████▏ | 385/469 [00:06<00:01, 64.78it/s]
+ 84%|████████▎ | 392/469 [00:06<00:01, 63.57it/s]
+ 85%|████████▌ | 399/469 [00:06<00:01, 62.76it/s]
+ 87%|████████▋ | 406/469 [00:06<00:01, 62.10it/s]
+ 88%|████████▊ | 413/469 [00:06<00:00, 62.38it/s]
+ 90%|████████▉ | 420/469 [00:06<00:00, 61.74it/s]
+ 91%|█████████ | 427/469 [00:06<00:00, 61.54it/s]
+ 93%|█████████▎| 434/469 [00:06<00:00, 58.85it/s]
+ 94%|█████████▍| 441/469 [00:06<00:00, 59.64it/s]
+ 95%|█████████▌| 447/469 [00:07<00:00, 58.16it/s]
+ 97%|█████████▋| 453/469 [00:07<00:00, 55.57it/s]
+ 98%|█████████▊| 460/469 [00:07<00:00, 57.77it/s]
+100%|█████████▉| 467/469 [00:07<00:00, 59.17it/s]
+100%|██████████| 469/469 [00:07<00:00, 62.78it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  5%|▌         | 24/469 [00:00<00:01, 233.27it/s]
+ 12%|█▏        | 54/469 [00:00<00:01, 271.30it/s]
+ 22%|██▏       | 105/469 [00:00<00:00, 378.53it/s]
+ 33%|███▎      | 157/469 [00:00<00:00, 431.81it/s]
+ 45%|████▍     | 209/469 [00:00<00:00, 462.72it/s]
+ 56%|█████▌    | 263/469 [00:00<00:00, 487.74it/s]
+ 68%|██████▊   | 317/469 [00:00<00:00, 502.10it/s]
+ 79%|███████▉  | 372/469 [00:00<00:00, 517.15it/s]
+ 91%|█████████ | 427/469 [00:00<00:00, 526.40it/s]
+100%|██████████| 469/469 [00:00<00:00, 476.13it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 11%|█▏        | 53/469 [00:00<00:00, 521.10it/s]
+ 23%|██▎       | 107/469 [00:00<00:00, 528.85it/s]
+ 34%|███▍      | 161/469 [00:00<00:00, 531.53it/s]
+ 46%|████▌     | 216/469 [00:00<00:00, 535.49it/s]
+ 58%|█████▊    | 270/469 [00:00<00:00, 535.27it/s]
+ 69%|██████▉   | 324/469 [00:00<00:00, 532.32it/s]
+ 81%|████████  | 378/469 [00:00<00:00, 530.14it/s]
+ 92%|█████████▏| 432/469 [00:00<00:00, 532.33it/s]
+100%|██████████| 469/469 [00:00<00:00, 530.96it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 11%|█         | 51/469 [00:00<00:00, 507.55it/s]
+ 22%|██▏       | 103/469 [00:00<00:00, 514.08it/s]
+ 33%|███▎      | 157/469 [00:00<00:00, 523.88it/s]
+ 45%|████▌     | 212/469 [00:00<00:00, 530.96it/s]
+ 57%|█████▋    | 267/469 [00:00<00:00, 535.99it/s]
+ 68%|██████▊   | 321/469 [00:00<00:00, 529.03it/s]
+ 80%|████████  | 376/469 [00:00<00:00, 532.86it/s]
+ 92%|█████████▏| 430/469 [00:00<00:00, 534.49it/s]
+100%|██████████| 469/469 [00:00<00:00, 531.36it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_deit_tiny_patch16_224 --data wss
+Output:
+Namespace(model_name='wss_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:24  loss: 0.0024 (0.0024)  f1: 0.9983 (0.9983)  acc: 0.9948 (0.9948)  time: 8.0364  data: 1.2601  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:05  loss: 0.0024 (0.0025)  f1: 0.9983 (0.9979)  acc: 0.9948 (0.9936)  time: 5.6090  data: 0.4201  max mem: 0
+Similarity Test: Total time: 0:00:16 (5.6454 s / it)
+469
+{1.007867803837947} {1.007867803837947} {1.007867803837947} {0.9978889146910427} {0.997867803837953}
+{1.0019118692252993} {1.0019118692252993} {1.0019118692252993} {0.9985061190178075} {1.0}
+{1.000720682302778} {1.000720682302778} {1.000720682302778} {0.9986085387758079} {1.0}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|          | 5/469 [00:00<00:10, 44.51it/s]
+  2%|▏         | 11/469 [00:00<00:09, 50.21it/s]
+  4%|▎         | 17/469 [00:00<00:08, 53.82it/s]
+  5%|▌         | 24/469 [00:00<00:07, 57.75it/s]
+  6%|▋         | 30/469 [00:00<00:07, 57.23it/s]
+  8%|▊         | 38/469 [00:00<00:06, 62.64it/s]
+ 10%|▉         | 45/469 [00:00<00:06, 63.61it/s]
+ 11%|█         | 52/469 [00:00<00:06, 64.91it/s]
+ 13%|█▎        | 59/469 [00:00<00:06, 59.95it/s]
+ 14%|█▍        | 66/469 [00:01<00:06, 62.01it/s]
+ 16%|█▌        | 73/469 [00:01<00:06, 58.72it/s]
+ 17%|█▋        | 79/469 [00:01<00:06, 58.27it/s]
+ 18%|█▊        | 85/469 [00:01<00:06, 56.32it/s]
+ 19%|█▉        | 91/469 [00:01<00:06, 56.80it/s]
+ 21%|██        | 97/469 [00:01<00:06, 56.91it/s]
+ 22%|██▏       | 105/469 [00:01<00:05, 62.67it/s]
+ 24%|██▍       | 113/469 [00:01<00:05, 65.54it/s]
+ 26%|██▌       | 120/469 [00:02<00:06, 56.85it/s]
+ 27%|██▋       | 126/469 [00:02<00:06, 55.33it/s]
+ 28%|██▊       | 132/469 [00:02<00:06, 54.89it/s]
+ 29%|██▉       | 138/469 [00:02<00:07, 45.80it/s]
+ 30%|███       | 143/469 [00:02<00:08, 39.50it/s]
+ 32%|███▏      | 148/469 [00:02<00:08, 39.02it/s]
+ 33%|███▎      | 153/469 [00:02<00:08, 39.25it/s]
+ 34%|███▎      | 158/469 [00:02<00:07, 41.05it/s]
+ 35%|███▍      | 163/469 [00:03<00:07, 38.81it/s]
+ 36%|███▌      | 170/469 [00:03<00:06, 45.41it/s]
+ 38%|███▊      | 177/469 [00:03<00:05, 50.28it/s]
+ 39%|███▉      | 185/469 [00:03<00:04, 57.38it/s]
+ 41%|████      | 192/469 [00:03<00:04, 60.58it/s]
+ 42%|████▏     | 199/469 [00:03<00:04, 62.20it/s]
+ 44%|████▍     | 206/469 [00:03<00:04, 63.46it/s]
+ 46%|████▌     | 214/469 [00:03<00:03, 65.91it/s]
+ 47%|████▋     | 222/469 [00:03<00:03, 69.17it/s]
+ 49%|████▉     | 229/469 [00:04<00:03, 68.97it/s]
+ 51%|█████     | 237/469 [00:04<00:03, 70.31it/s]
+ 52%|█████▏    | 245/469 [00:04<00:03, 69.52it/s]
+ 54%|█████▎    | 252/469 [00:04<00:03, 69.62it/s]
+ 55%|█████▌    | 260/469 [00:04<00:02, 72.16it/s]
+ 57%|█████▋    | 268/469 [00:04<00:02, 72.95it/s]
+ 59%|█████▉    | 276/469 [00:04<00:02, 71.70it/s]
+ 61%|██████    | 284/469 [00:04<00:02, 73.82it/s]
+ 62%|██████▏   | 292/469 [00:04<00:02, 74.48it/s]
+ 64%|██████▍   | 300/469 [00:05<00:02, 73.13it/s]
+ 66%|██████▌   | 308/469 [00:05<00:02, 65.48it/s]
+ 67%|██████▋   | 315/469 [00:05<00:02, 58.99it/s]
+ 69%|██████▊   | 322/469 [00:05<00:02, 57.95it/s]
+ 70%|██████▉   | 328/469 [00:05<00:02, 55.56it/s]
+ 71%|███████   | 334/469 [00:05<00:02, 54.81it/s]
+ 72%|███████▏  | 340/469 [00:05<00:02, 55.61it/s]
+ 74%|███████▍  | 347/469 [00:05<00:02, 56.76it/s]
+ 75%|███████▌  | 353/469 [00:06<00:02, 55.70it/s]
+ 77%|███████▋  | 359/469 [00:06<00:02, 54.38it/s]
+ 78%|███████▊  | 365/469 [00:06<00:01, 52.36it/s]
+ 79%|███████▉  | 371/469 [00:06<00:01, 52.92it/s]
+ 80%|████████  | 377/469 [00:06<00:01, 49.71it/s]
+ 82%|████████▏ | 383/469 [00:06<00:01, 49.97it/s]
+ 83%|████████▎ | 389/469 [00:06<00:01, 49.53it/s]
+ 84%|████████▍ | 395/469 [00:06<00:01, 50.29it/s]
+ 86%|████████▌ | 401/469 [00:07<00:01, 50.57it/s]
+ 87%|████████▋ | 407/469 [00:07<00:01, 46.66it/s]
+ 88%|████████▊ | 413/469 [00:07<00:01, 48.48it/s]
+ 90%|████████▉ | 420/469 [00:07<00:00, 53.17it/s]
+ 91%|█████████ | 426/469 [00:07<00:00, 50.18it/s]
+ 92%|█████████▏| 433/469 [00:07<00:00, 53.53it/s]
+ 94%|█████████▎| 439/469 [00:07<00:00, 54.13it/s]
+ 95%|█████████▍| 445/469 [00:07<00:00, 54.00it/s]
+ 96%|█████████▌| 451/469 [00:07<00:00, 55.02it/s]
+ 98%|█████████▊| 458/469 [00:08<00:00, 57.40it/s]
+ 99%|█████████▉| 464/469 [00:08<00:00, 55.51it/s]
+100%|██████████| 469/469 [00:08<00:00, 56.48it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 33/469 [00:00<00:01, 329.51it/s]
+ 14%|█▍        | 66/469 [00:00<00:01, 326.19it/s]
+ 21%|██        | 99/469 [00:00<00:01, 326.26it/s]
+ 28%|██▊       | 133/469 [00:00<00:01, 330.04it/s]
+ 36%|███▌      | 167/469 [00:00<00:00, 330.57it/s]
+ 43%|████▎     | 201/469 [00:00<00:00, 326.85it/s]
+ 50%|████▉     | 234/469 [00:00<00:00, 327.73it/s]
+ 57%|█████▋    | 268/469 [00:00<00:00, 330.94it/s]
+ 64%|██████▍   | 302/469 [00:00<00:00, 330.76it/s]
+ 72%|███████▏  | 336/469 [00:01<00:00, 329.19it/s]
+ 79%|███████▊  | 369/469 [00:01<00:00, 329.08it/s]
+ 86%|████████▌ | 404/469 [00:01<00:00, 332.98it/s]
+ 93%|█████████▎| 438/469 [00:01<00:00, 331.89it/s]
+100%|██████████| 469/469 [00:01<00:00, 329.53it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 34/469 [00:00<00:01, 334.50it/s]
+ 14%|█▍        | 68/469 [00:00<00:01, 336.75it/s]
+ 22%|██▏       | 103/469 [00:00<00:01, 342.44it/s]
+ 29%|██▉       | 138/469 [00:00<00:01, 326.29it/s]
+ 36%|███▋      | 171/469 [00:00<00:00, 327.45it/s]
+ 43%|████▎     | 204/469 [00:00<00:00, 326.41it/s]
+ 51%|█████     | 237/469 [00:00<00:00, 327.41it/s]
+ 58%|█████▊    | 270/469 [00:00<00:00, 319.35it/s]
+ 65%|██████▍   | 303/469 [00:00<00:00, 321.61it/s]
+ 72%|███████▏  | 336/469 [00:01<00:00, 321.29it/s]
+ 79%|███████▊  | 369/469 [00:01<00:00, 321.11it/s]
+ 86%|████████▌ | 402/469 [00:01<00:00, 312.71it/s]
+ 93%|█████████▎| 434/469 [00:01<00:00, 312.65it/s]
+100%|█████████▉| 467/469 [00:01<00:00, 315.27it/s]
+100%|██████████| 469/469 [00:01<00:00, 321.58it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 32/469 [00:00<00:01, 309.94it/s]
+ 13%|█▎        | 63/469 [00:00<00:01, 304.78it/s]
+ 20%|██        | 95/469 [00:00<00:01, 306.96it/s]
+ 27%|██▋       | 127/469 [00:00<00:01, 310.91it/s]
+ 34%|███▍      | 160/469 [00:00<00:00, 316.63it/s]
+ 41%|████      | 193/469 [00:00<00:00, 318.84it/s]
+ 49%|████▊     | 228/469 [00:00<00:00, 325.83it/s]
+ 56%|█████▌    | 262/469 [00:00<00:00, 328.87it/s]
+ 63%|██████▎   | 296/469 [00:00<00:00, 332.20it/s]
+ 70%|███████   | 330/469 [00:01<00:00, 325.36it/s]
+ 78%|███████▊  | 365/469 [00:01<00:00, 329.51it/s]
+ 85%|████████▍ | 398/469 [00:01<00:00, 324.10it/s]
+ 92%|█████████▏| 432/469 [00:01<00:00, 327.04it/s]
+ 99%|█████████▉| 466/469 [00:01<00:00, 329.65it/s]
+100%|██████████| 469/469 [00:01<00:00, 323.49it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_deit_tiny_patch16_224 --data wss--label_filter
+Output:
+Namespace(model_name='wss_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='wss--label_filter', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:23  loss: 0.0024 (0.0024)  f1: 0.9983 (0.9983)  acc: 0.9948 (0.9948)  time: 7.9089  data: 1.2557  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:05  loss: 0.0024 (0.0025)  f1: 0.9983 (0.9979)  acc: 0.9948 (0.9936)  time: 5.6238  data: 0.4187  max mem: 0
+Similarity Test: Total time: 0:00:16 (5.6549 s / it)
+469
+{1.007867803837947} {1.007867803837947} {1.007867803837947} {0.9978889146910427} {0.997867803837953}
+{1.0019118692252993} {1.0019118692252993} {1.0019118692252993} {0.9985061190178075} {1.0}
+{1.000720682302778} {1.000720682302778} {1.000720682302778} {0.9986085387758079} {1.0}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|          | 5/469 [00:00<00:11, 41.75it/s]
+  3%|▎         | 12/469 [00:00<00:08, 53.56it/s]
+  4%|▍         | 18/469 [00:00<00:09, 48.24it/s]
+  5%|▌         | 24/469 [00:00<00:08, 51.01it/s]
+  6%|▋         | 30/469 [00:00<00:08, 49.23it/s]
+  8%|▊         | 36/469 [00:00<00:08, 50.97it/s]
+  9%|▉         | 42/469 [00:00<00:08, 53.20it/s]
+ 10%|█         | 48/469 [00:00<00:07, 54.17it/s]
+ 12%|█▏        | 56/469 [00:01<00:06, 59.34it/s]
+ 13%|█▎        | 62/469 [00:01<00:06, 58.86it/s]
+ 15%|█▍        | 69/469 [00:01<00:06, 58.85it/s]
+ 16%|█▌        | 76/469 [00:01<00:06, 59.93it/s]
+ 17%|█▋        | 82/469 [00:01<00:06, 58.29it/s]
+ 19%|█▉        | 89/469 [00:01<00:06, 59.06it/s]
+ 20%|██        | 96/469 [00:01<00:06, 61.88it/s]
+ 22%|██▏       | 103/469 [00:01<00:06, 59.70it/s]
+ 23%|██▎       | 110/469 [00:01<00:05, 61.18it/s]
+ 25%|██▍       | 117/469 [00:02<00:05, 59.77it/s]
+ 26%|██▋       | 124/469 [00:02<00:06, 56.66it/s]
+ 28%|██▊       | 131/469 [00:02<00:05, 58.43it/s]
+ 29%|██▉       | 137/469 [00:02<00:05, 57.92it/s]
+ 30%|███       | 143/469 [00:02<00:05, 57.07it/s]
+ 32%|███▏      | 149/469 [00:02<00:06, 53.09it/s]
+ 33%|███▎      | 155/469 [00:02<00:06, 49.25it/s]
+ 34%|███▍      | 161/469 [00:02<00:06, 48.31it/s]
+ 36%|███▌      | 168/469 [00:03<00:05, 52.86it/s]
+ 37%|███▋      | 175/469 [00:03<00:05, 56.41it/s]
+ 39%|███▊      | 181/469 [00:03<00:05, 53.02it/s]
+ 40%|███▉      | 187/469 [00:03<00:05, 54.17it/s]
+ 41%|████      | 193/469 [00:03<00:05, 54.38it/s]
+ 42%|████▏     | 199/469 [00:03<00:05, 53.70it/s]
+ 44%|████▎     | 205/469 [00:03<00:05, 49.05it/s]
+ 45%|████▍     | 211/469 [00:03<00:05, 46.40it/s]
+ 46%|████▋     | 217/469 [00:04<00:05, 49.38it/s]
+ 48%|████▊     | 223/469 [00:04<00:04, 51.98it/s]
+ 49%|████▉     | 229/469 [00:04<00:04, 48.93it/s]
+ 50%|█████     | 235/469 [00:04<00:04, 50.93it/s]
+ 51%|█████▏    | 241/469 [00:04<00:04, 51.12it/s]
+ 53%|█████▎    | 247/469 [00:04<00:04, 51.63it/s]
+ 54%|█████▍    | 253/469 [00:04<00:04, 47.97it/s]
+ 55%|█████▌    | 259/469 [00:04<00:04, 48.95it/s]
+ 56%|█████▋    | 264/469 [00:04<00:04, 49.11it/s]
+ 57%|█████▋    | 269/469 [00:05<00:04, 49.16it/s]
+ 58%|█████▊    | 274/469 [00:05<00:04, 48.03it/s]
+ 60%|█████▉    | 280/469 [00:05<00:03, 50.46it/s]
+ 61%|██████    | 287/469 [00:05<00:03, 54.86it/s]
+ 63%|██████▎   | 295/469 [00:05<00:02, 60.19it/s]
+ 64%|██████▍   | 302/469 [00:05<00:02, 59.71it/s]
+ 66%|██████▌   | 308/469 [00:05<00:02, 58.27it/s]
+ 67%|██████▋   | 314/469 [00:05<00:02, 56.03it/s]
+ 68%|██████▊   | 320/469 [00:05<00:02, 55.31it/s]
+ 70%|██████▉   | 326/469 [00:06<00:02, 55.98it/s]
+ 71%|███████   | 333/469 [00:06<00:02, 56.78it/s]
+ 72%|███████▏  | 339/469 [00:06<00:02, 55.85it/s]
+ 74%|███████▍  | 347/469 [00:06<00:01, 61.19it/s]
+ 75%|███████▌  | 354/469 [00:06<00:01, 61.25it/s]
+ 77%|███████▋  | 361/469 [00:06<00:01, 58.25it/s]
+ 78%|███████▊  | 367/469 [00:06<00:01, 55.91it/s]
+ 80%|███████▉  | 373/469 [00:06<00:01, 54.30it/s]
+ 81%|████████  | 380/469 [00:06<00:01, 56.88it/s]
+ 82%|████████▏ | 386/469 [00:07<00:01, 56.36it/s]
+ 84%|████████▎ | 392/469 [00:07<00:01, 54.79it/s]
+ 85%|████████▍ | 398/469 [00:07<00:01, 52.61it/s]
+ 86%|████████▌ | 404/469 [00:07<00:01, 51.38it/s]
+ 88%|████████▊ | 411/469 [00:07<00:01, 55.70it/s]
+ 89%|████████▉ | 417/469 [00:07<00:00, 55.06it/s]
+ 90%|█████████ | 423/469 [00:07<00:00, 55.85it/s]
+ 91%|█████████▏| 429/469 [00:07<00:00, 53.19it/s]
+ 93%|█████████▎| 436/469 [00:08<00:00, 54.84it/s]
+ 94%|█████████▍| 442/469 [00:08<00:00, 54.68it/s]
+ 96%|█████████▌| 448/469 [00:08<00:00, 52.61it/s]
+ 97%|█████████▋| 455/469 [00:08<00:00, 54.97it/s]
+ 98%|█████████▊| 461/469 [00:08<00:00, 54.62it/s]
+100%|█████████▉| 468/469 [00:08<00:00, 58.30it/s]
+100%|██████████| 469/469 [00:08<00:00, 54.56it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 34/469 [00:00<00:01, 333.38it/s]
+ 15%|█▌        | 71/469 [00:00<00:01, 351.26it/s]
+ 27%|██▋       | 125/469 [00:00<00:00, 434.42it/s]
+ 38%|███▊      | 178/469 [00:00<00:00, 471.64it/s]
+ 49%|████▉     | 232/469 [00:00<00:00, 494.52it/s]
+ 61%|██████    | 285/469 [00:00<00:00, 504.50it/s]
+ 72%|███████▏  | 336/469 [00:00<00:00, 493.75it/s]
+ 83%|████████▎ | 389/469 [00:00<00:00, 503.30it/s]
+ 94%|█████████▍| 442/469 [00:00<00:00, 509.78it/s]
+100%|██████████| 469/469 [00:00<00:00, 484.28it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 11%|█         | 52/469 [00:00<00:00, 518.15it/s]
+ 22%|██▏       | 104/469 [00:00<00:00, 484.14it/s]
+ 33%|███▎      | 153/469 [00:00<00:00, 458.53it/s]
+ 44%|████▍     | 206/469 [00:00<00:00, 483.08it/s]
+ 55%|█████▌    | 259/469 [00:00<00:00, 495.86it/s]
+ 66%|██████▌   | 309/469 [00:00<00:00, 478.22it/s]
+ 76%|███████▋  | 358/469 [00:00<00:00, 439.78it/s]
+ 87%|████████▋ | 407/469 [00:00<00:00, 452.16it/s]
+ 97%|█████████▋| 456/469 [00:00<00:00, 462.68it/s]
+100%|██████████| 469/469 [00:01<00:00, 468.77it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  9%|▉         | 44/469 [00:00<00:00, 429.14it/s]
+ 19%|█▊        | 87/469 [00:00<00:00, 404.26it/s]
+ 29%|██▉       | 138/469 [00:00<00:00, 447.61it/s]
+ 40%|████      | 189/469 [00:00<00:00, 467.98it/s]
+ 51%|█████     | 239/469 [00:00<00:00, 477.63it/s]
+ 61%|██████    | 287/469 [00:00<00:00, 476.89it/s]
+ 71%|███████▏  | 335/469 [00:00<00:00, 464.56it/s]
+ 82%|████████▏ | 385/469 [00:00<00:00, 475.15it/s]
+ 93%|█████████▎| 436/469 [00:00<00:00, 483.45it/s]
+100%|██████████| 469/469 [00:00<00:00, 472.25it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name deit_tiny_patch16_224 --data wss --scratch https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth
+Output:
+Namespace(model_name='deit_tiny_patch16_224', k=5, search_image_index=0, scratch='https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:21  loss: 0.9825 (0.9825)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 7.0964  data: 0.9672  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:05  loss: 1.4223 (1.2980)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 5.1234  data: 0.3225  max mem: 0
+Similarity Test: Total time: 0:00:15 (5.1487 s / it)
+469
+{0.783987206823022} {0.783987206823022} {0.783987206823022} {0.7762249572505232} {0.7739872068230277}
+{0.768081023454156} {0.768081023454156} {0.768081023454156} {0.7688301897527604} {0.814498933901919}
+{0.74784221748401} {0.74784221748401} {0.74784221748401} {0.7550046002414726} {0.8123667377398721}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:07, 61.69it/s]
+  3%|▎         | 15/469 [00:00<00:06, 68.29it/s]
+  5%|▍         | 22/469 [00:00<00:08, 55.33it/s]
+  6%|▌         | 28/469 [00:00<00:08, 51.53it/s]
+  7%|▋         | 34/469 [00:00<00:08, 52.93it/s]
+  9%|▊         | 40/469 [00:00<00:08, 48.60it/s]
+ 10%|▉         | 46/469 [00:00<00:08, 51.39it/s]
+ 11%|█         | 52/469 [00:00<00:08, 52.12it/s]
+ 12%|█▏        | 58/469 [00:01<00:07, 52.82it/s]
+ 14%|█▎        | 64/469 [00:01<00:07, 51.21it/s]
+ 15%|█▍        | 70/469 [00:01<00:07, 50.69it/s]
+ 16%|█▌        | 76/469 [00:01<00:07, 49.19it/s]
+ 17%|█▋        | 82/469 [00:01<00:07, 50.64it/s]
+ 19%|█▉        | 90/469 [00:01<00:06, 56.90it/s]
+ 20%|██        | 96/469 [00:01<00:06, 53.75it/s]
+ 22%|██▏       | 102/469 [00:01<00:07, 50.50it/s]
+ 23%|██▎       | 108/469 [00:02<00:06, 52.37it/s]
+ 25%|██▍       | 115/469 [00:02<00:06, 56.23it/s]
+ 26%|██▌       | 121/469 [00:02<00:06, 57.06it/s]
+ 27%|██▋       | 127/469 [00:02<00:06, 56.71it/s]
+ 28%|██▊       | 133/469 [00:02<00:06, 54.97it/s]
+ 30%|██▉       | 139/469 [00:02<00:05, 55.57it/s]
+ 31%|███       | 145/469 [00:02<00:05, 54.02it/s]
+ 32%|███▏      | 151/469 [00:02<00:05, 55.65it/s]
+ 33%|███▎      | 157/469 [00:02<00:06, 51.87it/s]
+ 35%|███▍      | 163/469 [00:03<00:05, 53.05it/s]
+ 36%|███▌      | 170/469 [00:03<00:05, 55.55it/s]
+ 38%|███▊      | 178/469 [00:03<00:04, 60.30it/s]
+ 40%|███▉      | 186/469 [00:03<00:04, 63.37it/s]
+ 41%|████      | 193/469 [00:03<00:04, 62.39it/s]
+ 43%|████▎     | 200/469 [00:03<00:04, 64.07it/s]
+ 44%|████▍     | 207/469 [00:03<00:04, 62.56it/s]
+ 46%|████▌     | 214/469 [00:03<00:04, 62.86it/s]
+ 47%|████▋     | 221/469 [00:03<00:04, 60.59it/s]
+ 49%|████▊     | 228/469 [00:04<00:03, 61.46it/s]
+ 50%|█████     | 236/469 [00:04<00:03, 63.89it/s]
+ 52%|█████▏    | 243/469 [00:04<00:03, 63.52it/s]
+ 53%|█████▎    | 250/469 [00:04<00:03, 62.32it/s]
+ 55%|█████▍    | 257/469 [00:04<00:03, 62.02it/s]
+ 56%|█████▋    | 264/469 [00:04<00:03, 60.21it/s]
+ 58%|█████▊    | 271/469 [00:04<00:03, 57.87it/s]
+ 59%|█████▉    | 277/469 [00:04<00:03, 57.95it/s]
+ 61%|██████    | 284/469 [00:04<00:03, 60.11it/s]
+ 62%|██████▏   | 291/469 [00:05<00:02, 61.14it/s]
+ 64%|██████▎   | 298/469 [00:05<00:02, 62.72it/s]
+ 65%|██████▌   | 305/469 [00:05<00:02, 62.46it/s]
+ 67%|██████▋   | 312/469 [00:05<00:02, 60.52it/s]
+ 68%|██████▊   | 319/469 [00:05<00:02, 59.36it/s]
+ 69%|██████▉   | 325/469 [00:05<00:02, 58.74it/s]
+ 71%|███████   | 332/469 [00:05<00:02, 59.11it/s]
+ 72%|███████▏  | 339/469 [00:05<00:02, 61.56it/s]
+ 74%|███████▍  | 348/469 [00:06<00:01, 67.43it/s]
+ 76%|███████▌  | 355/469 [00:06<00:01, 64.95it/s]
+ 77%|███████▋  | 362/469 [00:06<00:01, 62.62it/s]
+ 79%|███████▉  | 370/469 [00:06<00:01, 65.83it/s]
+ 81%|████████  | 378/469 [00:06<00:01, 68.51it/s]
+ 82%|████████▏ | 386/469 [00:06<00:01, 68.87it/s]
+ 84%|████████▍ | 394/469 [00:06<00:01, 70.51it/s]
+ 86%|████████▌ | 402/469 [00:06<00:00, 71.02it/s]
+ 87%|████████▋ | 410/469 [00:06<00:00, 72.35it/s]
+ 89%|████████▉ | 418/469 [00:07<00:00, 72.14it/s]
+ 91%|█████████ | 426/469 [00:07<00:00, 65.07it/s]
+ 92%|█████████▏| 433/469 [00:07<00:00, 64.08it/s]
+ 94%|█████████▍| 441/469 [00:07<00:00, 65.65it/s]
+ 96%|█████████▌| 448/469 [00:07<00:00, 43.38it/s]
+ 97%|█████████▋| 456/469 [00:07<00:00, 49.78it/s]
+ 99%|█████████▊| 463/469 [00:07<00:00, 53.53it/s]
+100%|██████████| 469/469 [00:08<00:00, 58.47it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 33/469 [00:00<00:01, 323.07it/s]
+ 14%|█▍        | 66/469 [00:00<00:01, 322.68it/s]
+ 25%|██▌       | 118/469 [00:00<00:00, 408.32it/s]
+ 36%|███▌      | 169/469 [00:00<00:00, 447.62it/s]
+ 48%|████▊     | 224/469 [00:00<00:00, 482.38it/s]
+ 59%|█████▉    | 279/469 [00:00<00:00, 502.73it/s]
+ 71%|███████   | 332/469 [00:00<00:00, 510.57it/s]
+ 82%|████████▏ | 384/469 [00:00<00:00, 513.52it/s]
+ 94%|█████████▎| 439/469 [00:00<00:00, 523.33it/s]
+100%|██████████| 469/469 [00:00<00:00, 485.69it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 12%|█▏        | 54/469 [00:00<00:00, 531.23it/s]
+ 23%|██▎       | 108/469 [00:00<00:00, 520.09it/s]
+ 35%|███▍      | 162/469 [00:00<00:00, 528.58it/s]
+ 46%|████▌     | 216/469 [00:00<00:00, 531.07it/s]
+ 58%|█████▊    | 270/469 [00:00<00:00, 530.82it/s]
+ 69%|██████▉   | 324/469 [00:00<00:00, 528.22it/s]
+ 81%|████████  | 379/469 [00:00<00:00, 532.79it/s]
+ 93%|█████████▎| 434/469 [00:00<00:00, 535.92it/s]
+100%|██████████| 469/469 [00:00<00:00, 530.79it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 11%|█         | 52/469 [00:00<00:00, 517.60it/s]
+ 23%|██▎       | 106/469 [00:00<00:00, 529.01it/s]
+ 34%|███▍      | 160/469 [00:00<00:00, 532.81it/s]
+ 46%|████▌     | 214/469 [00:00<00:00, 529.81it/s]
+ 57%|█████▋    | 267/469 [00:00<00:00, 524.35it/s]
+ 68%|██████▊   | 320/469 [00:00<00:00, 524.15it/s]
+ 80%|███████▉  | 373/469 [00:00<00:00, 525.12it/s]
+ 91%|█████████ | 426/469 [00:00<00:00, 523.96it/s]
+100%|██████████| 469/469 [00:00<00:00, 523.59it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_general_pretrained_deit_tiny_patch16_224 --data wss
+Output:
+Namespace(model_name='wss_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:21  loss: 0.0030 (0.0030)  f1: 0.9896 (0.9896)  acc: 0.9688 (0.9688)  time: 7.1719  data: 1.2503  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:05  loss: 0.0030 (0.0034)  f1: 0.9882 (0.9886)  acc: 0.9688 (0.9701)  time: 5.1137  data: 0.4169  max mem: 0
+Similarity Test: Total time: 0:00:15 (5.1479 s / it)
+469
+{1.009999999999994} {1.009999999999994} {1.009999999999994} {1.0} {1.0}
+{1.000490405117268} {1.000490405117268} {1.000490405117268} {0.9977473673985918} {1.0}
+{0.9981620469083219} {0.9981620469083219} {0.9981620469083219} {0.9969126359992825} {0.997867803837953}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:06, 66.82it/s]
+  3%|▎         | 15/469 [00:00<00:06, 71.03it/s]
+  5%|▍         | 23/469 [00:00<00:06, 71.01it/s]
+  7%|▋         | 31/469 [00:00<00:06, 66.50it/s]
+  8%|▊         | 38/469 [00:00<00:06, 67.62it/s]
+ 10%|▉         | 46/469 [00:00<00:06, 68.48it/s]
+ 12%|█▏        | 54/469 [00:00<00:05, 69.48it/s]
+ 13%|█▎        | 62/469 [00:00<00:05, 70.46it/s]
+ 15%|█▍        | 70/469 [00:01<00:05, 70.40it/s]
+ 17%|█▋        | 78/469 [00:01<00:05, 67.00it/s]
+ 18%|█▊        | 86/469 [00:01<00:05, 69.44it/s]
+ 20%|██        | 94/469 [00:01<00:05, 70.32it/s]
+ 22%|██▏       | 102/469 [00:01<00:05, 70.52it/s]
+ 23%|██▎       | 110/469 [00:01<00:05, 71.05it/s]
+ 25%|██▌       | 118/469 [00:01<00:05, 69.29it/s]
+ 27%|██▋       | 125/469 [00:01<00:05, 66.66it/s]
+ 28%|██▊       | 132/469 [00:01<00:04, 67.55it/s]
+ 30%|██▉       | 139/469 [00:02<00:05, 64.18it/s]
+ 31%|███       | 146/469 [00:02<00:04, 64.75it/s]
+ 33%|███▎      | 153/469 [00:02<00:04, 65.86it/s]
+ 34%|███▍      | 160/469 [00:02<00:04, 66.54it/s]
+ 36%|███▌      | 168/469 [00:02<00:04, 68.11it/s]
+ 38%|███▊      | 176/469 [00:02<00:04, 70.16it/s]
+ 39%|███▉      | 184/469 [00:02<00:04, 69.82it/s]
+ 41%|████      | 191/469 [00:02<00:04, 69.35it/s]
+ 42%|████▏     | 199/469 [00:02<00:03, 71.13it/s]
+ 44%|████▍     | 207/469 [00:03<00:03, 71.31it/s]
+ 46%|████▌     | 215/469 [00:03<00:03, 70.35it/s]
+ 48%|████▊     | 223/469 [00:03<00:03, 71.70it/s]
+ 49%|████▉     | 231/469 [00:03<00:03, 72.35it/s]
+ 51%|█████     | 239/469 [00:03<00:03, 72.52it/s]
+ 53%|█████▎    | 247/469 [00:03<00:03, 72.44it/s]
+ 54%|█████▍    | 255/469 [00:03<00:03, 67.13it/s]
+ 56%|█████▌    | 263/469 [00:03<00:02, 68.69it/s]
+ 58%|█████▊    | 270/469 [00:03<00:02, 68.23it/s]
+ 59%|█████▉    | 278/469 [00:04<00:02, 69.38it/s]
+ 61%|██████    | 286/469 [00:04<00:02, 71.66it/s]
+ 63%|██████▎   | 294/469 [00:04<00:02, 73.23it/s]
+ 64%|██████▍   | 302/469 [00:04<00:02, 72.40it/s]
+ 66%|██████▌   | 310/469 [00:04<00:02, 72.38it/s]
+ 68%|██████▊   | 318/469 [00:04<00:02, 73.09it/s]
+ 70%|██████▉   | 326/469 [00:04<00:01, 72.95it/s]
+ 71%|███████   | 334/469 [00:04<00:01, 72.36it/s]
+ 73%|███████▎  | 342/469 [00:04<00:01, 73.13it/s]
+ 75%|███████▍  | 350/469 [00:05<00:01, 67.89it/s]
+ 76%|███████▌  | 357/469 [00:05<00:01, 68.38it/s]
+ 78%|███████▊  | 364/469 [00:05<00:01, 66.69it/s]
+ 79%|███████▉  | 372/469 [00:05<00:01, 67.90it/s]
+ 81%|████████  | 380/469 [00:05<00:01, 66.96it/s]
+ 83%|████████▎ | 387/469 [00:05<00:01, 64.65it/s]
+ 84%|████████▍ | 394/469 [00:05<00:01, 63.23it/s]
+ 86%|████████▌ | 401/469 [00:05<00:01, 63.60it/s]
+ 87%|████████▋ | 408/469 [00:05<00:00, 64.30it/s]
+ 88%|████████▊ | 415/469 [00:06<00:00, 64.83it/s]
+ 90%|████████▉ | 422/469 [00:06<00:00, 63.46it/s]
+ 91%|█████████▏| 429/469 [00:06<00:00, 65.07it/s]
+ 93%|█████████▎| 436/469 [00:06<00:00, 66.39it/s]
+ 94%|█████████▍| 443/469 [00:06<00:00, 63.67it/s]
+ 96%|█████████▌| 450/469 [00:06<00:00, 63.28it/s]
+ 98%|█████████▊| 458/469 [00:06<00:00, 64.67it/s]
+ 99%|█████████▉| 465/469 [00:06<00:00, 60.21it/s]
+100%|██████████| 469/469 [00:06<00:00, 67.77it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 34/469 [00:00<00:01, 336.66it/s]
+ 14%|█▍        | 68/469 [00:00<00:01, 334.45it/s]
+ 22%|██▏       | 103/469 [00:00<00:01, 340.37it/s]
+ 29%|██▉       | 138/469 [00:00<00:00, 337.45it/s]
+ 37%|███▋      | 173/469 [00:00<00:00, 340.16it/s]
+ 44%|████▍     | 208/469 [00:00<00:00, 337.14it/s]
+ 52%|█████▏    | 242/469 [00:00<00:00, 337.84it/s]
+ 59%|█████▉    | 276/469 [00:00<00:00, 337.50it/s]
+ 66%|██████▋   | 311/469 [00:00<00:00, 338.84it/s]
+ 74%|███████▎  | 345/469 [00:01<00:00, 336.49it/s]
+ 81%|████████  | 379/469 [00:01<00:00, 336.07it/s]
+ 88%|████████▊ | 414/469 [00:01<00:00, 339.61it/s]
+ 96%|█████████▌| 448/469 [00:01<00:00, 331.08it/s]
+100%|██████████| 469/469 [00:01<00:00, 336.30it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 32/469 [00:00<00:01, 316.77it/s]
+ 14%|█▍        | 66/469 [00:00<00:01, 327.00it/s]
+ 21%|██▏       | 100/469 [00:00<00:01, 332.25it/s]
+ 29%|██▊       | 134/469 [00:00<00:01, 326.83it/s]
+ 36%|███▌      | 168/469 [00:00<00:00, 328.82it/s]
+ 43%|████▎     | 203/469 [00:00<00:00, 333.92it/s]
+ 51%|█████     | 237/469 [00:00<00:00, 331.68it/s]
+ 58%|█████▊    | 271/469 [00:00<00:00, 330.25it/s]
+ 65%|██████▌   | 305/469 [00:00<00:00, 331.03it/s]
+ 72%|███████▏  | 340/469 [00:01<00:00, 334.05it/s]
+ 80%|███████▉  | 374/469 [00:01<00:00, 326.72it/s]
+ 87%|████████▋ | 408/469 [00:01<00:00, 329.09it/s]
+ 94%|█████████▍| 442/469 [00:01<00:00, 332.00it/s]
+100%|██████████| 469/469 [00:01<00:00, 330.36it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 33/469 [00:00<00:01, 323.82it/s]
+ 14%|█▍        | 67/469 [00:00<00:01, 328.15it/s]
+ 22%|██▏       | 102/469 [00:00<00:01, 334.22it/s]
+ 29%|██▉       | 136/469 [00:00<00:01, 331.32it/s]
+ 36%|███▌      | 170/469 [00:00<00:00, 328.41it/s]
+ 43%|████▎     | 203/469 [00:00<00:00, 328.58it/s]
+ 51%|█████     | 237/469 [00:00<00:00, 331.80it/s]
+ 58%|█████▊    | 271/469 [00:00<00:00, 325.73it/s]
+ 65%|██████▍   | 304/469 [00:00<00:00, 326.53it/s]
+ 72%|███████▏  | 338/469 [00:01<00:00, 329.89it/s]
+ 79%|███████▉  | 372/469 [00:01<00:00, 329.09it/s]
+ 86%|████████▋ | 405/469 [00:01<00:00, 329.11it/s]
+ 93%|█████████▎| 438/469 [00:01<00:00, 328.34it/s]
+100%|██████████| 469/469 [00:01<00:00, 329.83it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_general_pretrained_deit_tiny_patch16_224 --data wss --label_filter
+Output:
+Namespace(model_name='wss_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='wss', label_filter=True, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 192, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=192, out_features=576, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=192, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:16  loss: 0.0030 (0.0030)  f1: 0.9896 (0.9896)  acc: 0.9688 (0.9688)  time: 5.3660  data: 1.0518  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:03  loss: 0.0030 (0.0034)  f1: 0.9882 (0.9886)  acc: 0.9688 (0.9701)  time: 3.6446  data: 0.3507  max mem: 0
+Similarity Test: Total time: 0:00:11 (3.6688 s / it)
+469
+{0.9204477611940238} {0.9204477611940238} {0.9204477611940238} {0.9113344170237925} {0.9104477611940298}
+{0.7808742004264387} {0.7808742004264387} {0.7808742004264387} {0.8138355972684406} {0.8869936034115139}
+{0.6476289978678004} {0.6476289978678004} {0.6476289978678004} {0.7135287618144474} {0.6119402985074627}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:06, 67.22it/s]
+  3%|▎         | 16/469 [00:00<00:06, 74.89it/s]
+  5%|▌         | 24/469 [00:00<00:05, 74.65it/s]
+  7%|▋         | 32/469 [00:00<00:06, 65.76it/s]
+  9%|▊         | 40/469 [00:00<00:06, 67.99it/s]
+ 10%|█         | 47/469 [00:00<00:06, 68.26it/s]
+ 12%|█▏        | 54/469 [00:00<00:06, 67.91it/s]
+ 13%|█▎        | 61/469 [00:00<00:06, 67.18it/s]
+ 15%|█▍        | 69/469 [00:01<00:05, 69.13it/s]
+ 16%|█▋        | 77/469 [00:01<00:05, 69.86it/s]
+ 18%|█▊        | 85/469 [00:01<00:05, 72.66it/s]
+ 20%|██        | 94/469 [00:01<00:05, 74.60it/s]
+ 22%|██▏       | 102/469 [00:01<00:04, 75.49it/s]
+ 24%|██▎       | 111/469 [00:01<00:04, 77.07it/s]
+ 25%|██▌       | 119/469 [00:01<00:04, 71.27it/s]
+ 27%|██▋       | 127/469 [00:01<00:04, 70.95it/s]
+ 29%|██▉       | 135/469 [00:01<00:04, 72.11it/s]
+ 30%|███       | 143/469 [00:02<00:04, 71.78it/s]
+ 32%|███▏      | 151/469 [00:02<00:04, 72.75it/s]
+ 34%|███▍      | 159/469 [00:02<00:04, 72.27it/s]
+ 36%|███▌      | 167/469 [00:02<00:04, 73.68it/s]
+ 37%|███▋      | 175/469 [00:02<00:03, 75.28it/s]
+ 39%|███▉      | 183/469 [00:02<00:03, 75.29it/s]
+ 41%|████      | 191/469 [00:02<00:03, 76.61it/s]
+ 42%|████▏     | 199/469 [00:02<00:03, 76.27it/s]
+ 44%|████▍     | 207/469 [00:02<00:03, 76.83it/s]
+ 46%|████▌     | 215/469 [00:02<00:03, 76.43it/s]
+ 48%|████▊     | 224/469 [00:03<00:03, 78.61it/s]
+ 50%|████▉     | 233/469 [00:03<00:02, 79.62it/s]
+ 51%|█████▏    | 241/469 [00:03<00:02, 79.11it/s]
+ 53%|█████▎    | 249/469 [00:03<00:02, 77.19it/s]
+ 55%|█████▍    | 257/469 [00:03<00:02, 74.45it/s]
+ 57%|█████▋    | 265/469 [00:03<00:02, 74.22it/s]
+ 58%|█████▊    | 273/469 [00:03<00:02, 75.29it/s]
+ 60%|██████    | 282/469 [00:03<00:02, 77.36it/s]
+ 62%|██████▏   | 291/469 [00:03<00:02, 78.71it/s]
+ 64%|██████▍   | 300/469 [00:04<00:02, 79.42it/s]
+ 66%|██████▌   | 308/469 [00:04<00:02, 79.36it/s]
+ 67%|██████▋   | 316/469 [00:04<00:01, 79.45it/s]
+ 69%|██████▉   | 324/469 [00:04<00:01, 75.07it/s]
+ 71%|███████   | 332/469 [00:04<00:01, 73.24it/s]
+ 73%|███████▎  | 341/469 [00:04<00:01, 75.86it/s]
+ 75%|███████▍  | 350/469 [00:04<00:01, 77.62it/s]
+ 76%|███████▋  | 358/469 [00:04<00:01, 76.53it/s]
+ 78%|███████▊  | 366/469 [00:04<00:01, 77.50it/s]
+ 80%|███████▉  | 374/469 [00:05<00:01, 77.45it/s]
+ 82%|████████▏ | 383/469 [00:05<00:01, 78.74it/s]
+ 83%|████████▎ | 391/469 [00:05<00:00, 78.07it/s]
+ 85%|████████▌ | 399/469 [00:05<00:00, 76.73it/s]
+ 87%|████████▋ | 408/469 [00:05<00:00, 78.27it/s]
+ 89%|████████▊ | 416/469 [00:05<00:00, 78.61it/s]
+ 91%|█████████ | 425/469 [00:05<00:00, 79.08it/s]
+ 92%|█████████▏| 433/469 [00:05<00:00, 79.18it/s]
+ 94%|█████████▍| 441/469 [00:05<00:00, 78.94it/s]
+ 96%|█████████▌| 449/469 [00:05<00:00, 78.87it/s]
+ 98%|█████████▊| 458/469 [00:06<00:00, 80.71it/s]
+100%|█████████▉| 467/469 [00:06<00:00, 78.88it/s]
+100%|██████████| 469/469 [00:06<00:00, 75.49it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  4%|▍         | 20/469 [00:00<00:02, 191.99it/s]
+ 11%|█         | 50/469 [00:00<00:01, 251.23it/s]
+ 17%|█▋        | 81/469 [00:00<00:01, 276.02it/s]
+ 24%|██▍       | 113/469 [00:00<00:01, 290.31it/s]
+ 31%|███       | 144/469 [00:00<00:01, 296.06it/s]
+ 37%|███▋      | 175/469 [00:00<00:00, 298.69it/s]
+ 44%|████▎     | 205/469 [00:00<00:00, 296.46it/s]
+ 50%|█████     | 235/469 [00:00<00:00, 291.84it/s]
+ 57%|█████▋    | 265/469 [00:00<00:00, 291.36it/s]
+ 63%|██████▎   | 295/469 [00:01<00:00, 290.14it/s]
+ 69%|██████▉   | 325/469 [00:01<00:00, 288.24it/s]
+ 75%|███████▌  | 354/469 [00:01<00:00, 285.65it/s]
+ 82%|████████▏ | 383/469 [00:01<00:00, 286.06it/s]
+ 88%|████████▊ | 412/469 [00:01<00:00, 286.32it/s]
+ 94%|█████████▍| 441/469 [00:01<00:00, 285.85it/s]
+100%|██████████| 469/469 [00:01<00:00, 285.85it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 31/469 [00:00<00:01, 308.95it/s]
+ 13%|█▎        | 62/469 [00:00<00:01, 308.92it/s]
+ 20%|█▉        | 93/469 [00:00<00:01, 308.36it/s]
+ 27%|██▋       | 125/469 [00:00<00:01, 311.29it/s]
+ 33%|███▎      | 157/469 [00:00<00:01, 310.99it/s]
+ 40%|████      | 189/469 [00:00<00:00, 306.88it/s]
+ 47%|████▋     | 220/469 [00:00<00:00, 299.34it/s]
+ 53%|█████▎    | 250/469 [00:00<00:00, 296.30it/s]
+ 60%|█████▉    | 280/469 [00:00<00:00, 294.00it/s]
+ 66%|██████▌   | 310/469 [00:01<00:00, 291.43it/s]
+ 72%|███████▏  | 340/469 [00:01<00:00, 288.10it/s]
+ 79%|███████▊  | 369/469 [00:01<00:00, 286.59it/s]
+ 85%|████████▍ | 398/469 [00:01<00:00, 286.09it/s]
+ 91%|█████████ | 427/469 [00:01<00:00, 286.34it/s]
+ 97%|█████████▋| 456/469 [00:01<00:00, 287.18it/s]
+100%|██████████| 469/469 [00:01<00:00, 294.31it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  7%|▋         | 32/469 [00:00<00:01, 311.99it/s]
+ 14%|█▎        | 64/469 [00:00<00:01, 310.41it/s]
+ 20%|██        | 96/469 [00:00<00:01, 308.51it/s]
+ 27%|██▋       | 128/469 [00:00<00:01, 310.31it/s]
+ 34%|███▍      | 160/469 [00:00<00:00, 311.74it/s]
+ 41%|████      | 192/469 [00:00<00:00, 307.02it/s]
+ 48%|████▊     | 223/469 [00:00<00:00, 300.39it/s]
+ 54%|█████▍    | 254/469 [00:00<00:00, 296.50it/s]
+ 61%|██████    | 284/469 [00:00<00:00, 294.04it/s]
+ 67%|██████▋   | 314/469 [00:01<00:00, 289.92it/s]
+ 73%|███████▎  | 344/469 [00:01<00:00, 288.09it/s]
+ 80%|███████▉  | 373/469 [00:01<00:00, 287.47it/s]
+ 86%|████████▌ | 402/469 [00:01<00:00, 286.92it/s]
+ 92%|█████████▏| 431/469 [00:01<00:00, 285.48it/s]
+ 98%|█████████▊| 461/469 [00:01<00:00, 287.92it/s]
+100%|██████████| 469/469 [00:01<00:00, 294.82it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name deit_small_patch16_224 --data wss --scratch ../models/mocov3_tiny_checkpoint/mocov3_deit_vit_small.pth
+Output:
+Namespace(model_name='deit_small_patch16_224', k=5, search_image_index=0, scratch='../models/mocov3_tiny_checkpoint/mocov3_deit_vit_small.pth', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=384, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:43  loss: 1.3849 (1.3849)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 14.5576  data: 0.9501  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:11  loss: 0.9796 (1.1091)  f1: 0.0000 (0.0000)  acc: 0.0000 (0.0000)  time: 11.1326  data: 0.3168  max mem: 0
+Similarity Test: Total time: 0:00:33 (11.1607 s / it)
+469
+{0.7690618336886937} {0.7690618336886937} {0.7690618336886937} {0.7614473600878221} {0.7590618336886994}
+{0.7517341862117958} {0.7517341862117958} {0.7517341862117958} {0.7516746539503832} {0.7825159914712153}
+{0.738886993603413} {0.738886993603413} {0.738886993603413} {0.7430210416372031} {0.8038379530916845}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:06, 66.46it/s]
+  3%|▎         | 15/469 [00:00<00:06, 73.03it/s]
+  5%|▍         | 23/469 [00:00<00:06, 73.41it/s]
+  7%|▋         | 31/469 [00:00<00:05, 73.82it/s]
+  8%|▊         | 39/469 [00:00<00:06, 69.13it/s]
+ 10%|█         | 47/469 [00:00<00:05, 72.01it/s]
+ 12%|█▏        | 55/469 [00:00<00:05, 74.34it/s]
+ 13%|█▎        | 63/469 [00:00<00:05, 75.61it/s]
+ 15%|█▌        | 71/469 [00:00<00:05, 76.04it/s]
+ 17%|█▋        | 79/469 [00:01<00:05, 75.84it/s]
+ 19%|█▊        | 87/469 [00:01<00:05, 74.42it/s]
+ 20%|██        | 96/469 [00:01<00:04, 76.11it/s]
+ 22%|██▏       | 104/469 [00:01<00:04, 76.85it/s]
+ 24%|██▍       | 112/469 [00:01<00:04, 77.20it/s]
+ 26%|██▌       | 120/469 [00:01<00:04, 76.35it/s]
+ 27%|██▋       | 128/469 [00:01<00:04, 76.16it/s]
+ 29%|██▉       | 136/469 [00:01<00:04, 76.11it/s]
+ 31%|███       | 144/469 [00:01<00:04, 76.47it/s]
+ 32%|███▏      | 152/469 [00:02<00:04, 75.30it/s]
+ 34%|███▍      | 160/469 [00:02<00:04, 74.98it/s]
+ 36%|███▌      | 169/469 [00:02<00:03, 77.00it/s]
+ 38%|███▊      | 177/469 [00:02<00:03, 77.45it/s]
+ 39%|███▉      | 185/469 [00:02<00:03, 77.91it/s]
+ 41%|████      | 193/469 [00:02<00:03, 78.51it/s]
+ 43%|████▎     | 201/469 [00:02<00:03, 78.92it/s]
+ 45%|████▍     | 209/469 [00:02<00:03, 78.49it/s]
+ 46%|████▋     | 217/469 [00:02<00:03, 78.06it/s]
+ 48%|████▊     | 226/469 [00:02<00:03, 79.40it/s]
+ 50%|████▉     | 234/469 [00:03<00:02, 79.05it/s]
+ 52%|█████▏    | 242/469 [00:03<00:02, 78.38it/s]
+ 53%|█████▎    | 250/469 [00:03<00:02, 77.97it/s]
+ 55%|█████▌    | 258/469 [00:03<00:02, 77.96it/s]
+ 57%|█████▋    | 266/469 [00:03<00:02, 76.68it/s]
+ 58%|█████▊    | 274/469 [00:03<00:02, 73.33it/s]
+ 60%|██████    | 283/469 [00:03<00:02, 75.86it/s]
+ 62%|██████▏   | 292/469 [00:03<00:02, 77.92it/s]
+ 64%|██████▍   | 300/469 [00:03<00:02, 78.04it/s]
+ 66%|██████▌   | 308/469 [00:04<00:02, 77.69it/s]
+ 67%|██████▋   | 316/469 [00:04<00:01, 77.50it/s]
+ 69%|██████▉   | 324/469 [00:04<00:01, 77.74it/s]
+ 71%|███████   | 332/469 [00:04<00:01, 77.28it/s]
+ 73%|███████▎  | 341/469 [00:04<00:01, 78.45it/s]
+ 75%|███████▍  | 350/469 [00:04<00:01, 79.35it/s]
+ 76%|███████▋  | 358/469 [00:04<00:01, 78.73it/s]
+ 78%|███████▊  | 366/469 [00:04<00:01, 78.60it/s]
+ 80%|███████▉  | 374/469 [00:04<00:01, 78.02it/s]
+ 81%|████████▏ | 382/469 [00:04<00:01, 78.26it/s]
+ 83%|████████▎ | 390/469 [00:05<00:01, 75.83it/s]
+ 85%|████████▍ | 398/469 [00:05<00:00, 72.12it/s]
+ 87%|████████▋ | 407/469 [00:05<00:00, 75.26it/s]
+ 88%|████████▊ | 415/469 [00:05<00:00, 76.55it/s]
+ 90%|█████████ | 424/469 [00:05<00:00, 78.09it/s]
+ 92%|█████████▏| 432/469 [00:05<00:00, 78.15it/s]
+ 94%|█████████▍| 440/469 [00:05<00:00, 77.95it/s]
+ 96%|█████████▌| 448/469 [00:06<00:00, 51.02it/s]
+ 97%|█████████▋| 457/469 [00:06<00:00, 58.11it/s]
+ 99%|█████████▉| 465/469 [00:06<00:00, 62.35it/s]
+100%|██████████| 469/469 [00:06<00:00, 74.48it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  8%|▊         | 39/469 [00:00<00:01, 387.21it/s]
+ 17%|█▋        | 78/469 [00:00<00:01, 374.12it/s]
+ 27%|██▋       | 128/469 [00:00<00:00, 427.45it/s]
+ 38%|███▊      | 176/469 [00:00<00:00, 445.05it/s]
+ 49%|████▉     | 232/469 [00:00<00:00, 483.86it/s]
+ 62%|██████▏   | 289/469 [00:00<00:00, 510.61it/s]
+ 74%|███████▍  | 346/469 [00:00<00:00, 528.08it/s]
+ 86%|████████▌ | 403/469 [00:00<00:00, 539.08it/s]
+ 98%|█████████▊| 459/469 [00:00<00:00, 545.29it/s]
+100%|██████████| 469/469 [00:00<00:00, 502.49it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 12%|█▏        | 55/469 [00:00<00:00, 549.05it/s]
+ 24%|██▎       | 111/469 [00:00<00:00, 552.73it/s]
+ 36%|███▌      | 168/469 [00:00<00:00, 558.74it/s]
+ 48%|████▊     | 225/469 [00:00<00:00, 559.64it/s]
+ 60%|█████▉    | 281/469 [00:00<00:00, 557.53it/s]
+ 72%|███████▏  | 337/469 [00:00<00:00, 555.88it/s]
+ 84%|████████▍ | 393/469 [00:00<00:00, 552.99it/s]
+ 96%|█████████▌| 449/469 [00:00<00:00, 554.28it/s]
+100%|██████████| 469/469 [00:00<00:00, 555.25it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 12%|█▏        | 56/469 [00:00<00:00, 553.44it/s]
+ 24%|██▍       | 112/469 [00:00<00:00, 554.18it/s]
+ 36%|███▌      | 169/469 [00:00<00:00, 559.93it/s]
+ 48%|████▊     | 225/469 [00:00<00:00, 557.28it/s]
+ 60%|█████▉    | 281/469 [00:00<00:00, 554.12it/s]
+ 72%|███████▏  | 337/469 [00:00<00:00, 553.77it/s]
+ 84%|████████▍ | 393/469 [00:00<00:00, 551.26it/s]
+ 96%|█████████▌| 450/469 [00:00<00:00, 554.73it/s]
+100%|██████████| 469/469 [00:00<00:00, 554.16it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_pretrained_mocov3_tiny_checkpoint --data wss
+Output:
+Namespace(model_name='wss_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='wss', label_filter=False, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=384, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:48  loss: 0.0019 (0.0019)  f1: 1.0000 (1.0000)  acc: 1.0000 (1.0000)  time: 16.0826  data: 1.0911  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:12  loss: 0.0021 (0.0037)  f1: 0.9965 (0.9979)  acc: 0.9896 (0.9936)  time: 12.5857  data: 0.3638  max mem: 0
+Similarity Test: Total time: 0:00:37 (12.6127 s / it)
+469
+{1.009999999999994} {1.009999999999994} {1.009999999999994} {1.0} {1.0}
+{1.0033333333333305} {1.0033333333333305} {1.0033333333333305} {1.0} {1.0}
+{1.0020000000000064} {1.0020000000000064} {1.0020000000000064} {1.0} {1.0}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:07, 63.92it/s]
+  3%|▎         | 16/469 [00:00<00:06, 73.03it/s]
+  5%|▌         | 24/469 [00:00<00:06, 68.83it/s]
+  7%|▋         | 32/469 [00:00<00:06, 72.41it/s]
+  9%|▊         | 40/469 [00:00<00:05, 73.90it/s]
+ 10%|█         | 48/469 [00:00<00:05, 70.72it/s]
+ 12%|█▏        | 56/469 [00:00<00:05, 72.38it/s]
+ 14%|█▎        | 64/469 [00:00<00:05, 69.62it/s]
+ 15%|█▌        | 72/469 [00:01<00:05, 71.17it/s]
+ 17%|█▋        | 80/469 [00:01<00:05, 72.67it/s]
+ 19%|█▉        | 89/469 [00:01<00:05, 75.74it/s]
+ 21%|██        | 97/469 [00:01<00:04, 76.12it/s]
+ 22%|██▏       | 105/469 [00:01<00:04, 76.43it/s]
+ 24%|██▍       | 113/469 [00:01<00:04, 76.07it/s]
+ 26%|██▌       | 121/469 [00:01<00:04, 74.74it/s]
+ 28%|██▊       | 129/469 [00:01<00:04, 75.49it/s]
+ 29%|██▉       | 137/469 [00:01<00:04, 76.56it/s]
+ 31%|███       | 146/469 [00:01<00:04, 77.19it/s]
+ 33%|███▎      | 154/469 [00:02<00:04, 77.32it/s]
+ 35%|███▍      | 162/469 [00:02<00:03, 76.75it/s]
+ 36%|███▌      | 170/469 [00:02<00:04, 72.40it/s]
+ 38%|███▊      | 179/469 [00:02<00:03, 75.03it/s]
+ 40%|████      | 188/469 [00:02<00:03, 76.41it/s]
+ 42%|████▏     | 197/469 [00:02<00:03, 78.79it/s]
+ 44%|████▍     | 206/469 [00:02<00:03, 79.61it/s]
+ 46%|████▌     | 214/469 [00:02<00:03, 74.68it/s]
+ 48%|████▊     | 223/469 [00:02<00:03, 77.24it/s]
+ 49%|████▉     | 232/469 [00:03<00:03, 78.54it/s]
+ 51%|█████     | 240/469 [00:03<00:02, 78.89it/s]
+ 53%|█████▎    | 248/469 [00:03<00:02, 77.51it/s]
+ 55%|█████▍    | 256/469 [00:03<00:02, 76.63it/s]
+ 57%|█████▋    | 265/469 [00:03<00:02, 77.70it/s]
+ 58%|█████▊    | 273/469 [00:03<00:02, 72.47it/s]
+ 60%|█████▉    | 281/469 [00:03<00:02, 69.89it/s]
+ 62%|██████▏   | 289/469 [00:03<00:02, 67.76it/s]
+ 64%|██████▎   | 298/469 [00:04<00:02, 72.18it/s]
+ 65%|██████▌   | 307/469 [00:04<00:02, 74.88it/s]
+ 67%|██████▋   | 315/469 [00:04<00:02, 72.13it/s]
+ 69%|██████▉   | 323/469 [00:04<00:02, 70.44it/s]
+ 71%|███████   | 331/469 [00:04<00:01, 72.03it/s]
+ 72%|███████▏  | 339/469 [00:04<00:01, 74.09it/s]
+ 74%|███████▍  | 347/469 [00:04<00:01, 70.36it/s]
+ 76%|███████▌  | 355/469 [00:04<00:01, 68.83it/s]
+ 77%|███████▋  | 363/469 [00:04<00:01, 70.44it/s]
+ 79%|███████▉  | 371/469 [00:05<00:01, 72.47it/s]
+ 81%|████████  | 379/469 [00:05<00:01, 74.41it/s]
+ 83%|████████▎ | 387/469 [00:05<00:01, 74.30it/s]
+ 84%|████████▍ | 395/469 [00:05<00:01, 67.70it/s]
+ 86%|████████▌ | 402/469 [00:05<00:01, 66.14it/s]
+ 87%|████████▋ | 410/469 [00:05<00:00, 69.71it/s]
+ 89%|████████▉ | 418/469 [00:05<00:00, 70.27it/s]
+ 91%|█████████ | 426/469 [00:05<00:00, 72.31it/s]
+ 93%|█████████▎| 434/469 [00:05<00:00, 71.37it/s]
+ 94%|█████████▍| 442/469 [00:06<00:00, 67.64it/s]
+ 96%|█████████▌| 450/469 [00:06<00:00, 70.41it/s]
+ 98%|█████████▊| 459/469 [00:06<00:00, 73.53it/s]
+100%|█████████▉| 467/469 [00:06<00:00, 73.45it/s]
+100%|██████████| 469/469 [00:06<00:00, 73.32it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  8%|▊         | 36/469 [00:00<00:01, 354.58it/s]
+ 19%|█▉        | 89/469 [00:00<00:00, 453.26it/s]
+ 29%|██▉       | 137/469 [00:00<00:00, 464.42it/s]
+ 41%|████      | 193/469 [00:00<00:00, 498.49it/s]
+ 53%|█████▎    | 248/469 [00:00<00:00, 516.75it/s]
+ 65%|██████▍   | 303/469 [00:00<00:00, 527.89it/s]
+ 76%|███████▋  | 358/469 [00:00<00:00, 535.07it/s]
+ 88%|████████▊ | 415/469 [00:00<00:00, 543.93it/s]
+100%|██████████| 469/469 [00:00<00:00, 518.80it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 12%|█▏        | 56/469 [00:00<00:00, 550.95it/s]
+ 24%|██▍       | 112/469 [00:00<00:00, 555.00it/s]
+ 36%|███▌      | 168/469 [00:00<00:00, 556.83it/s]
+ 48%|████▊     | 224/469 [00:00<00:00, 555.71it/s]
+ 60%|█████▉    | 280/469 [00:00<00:00, 554.09it/s]
+ 72%|███████▏  | 336/469 [00:00<00:00, 552.09it/s]
+ 84%|████████▎ | 392/469 [00:00<00:00, 552.33it/s]
+ 96%|█████████▌| 449/469 [00:00<00:00, 554.66it/s]
+100%|██████████| 469/469 [00:00<00:00, 554.16it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+ 12%|█▏        | 55/469 [00:00<00:00, 549.27it/s]
+ 23%|██▎       | 110/469 [00:00<00:00, 546.48it/s]
+ 35%|███▌      | 165/469 [00:00<00:00, 545.26it/s]
+ 47%|████▋     | 220/469 [00:00<00:00, 547.01it/s]
+ 59%|█████▉    | 276/469 [00:00<00:00, 551.52it/s]
+ 71%|███████   | 332/469 [00:00<00:00, 554.04it/s]
+ 83%|████████▎ | 389/469 [00:00<00:00, 556.60it/s]
+ 95%|█████████▌| 447/469 [00:00<00:00, 560.95it/s]
+100%|██████████| 469/469 [00:00<00:00, 554.70it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name wss_pretrained_mocov3_tiny_checkpoint --data wss --label_filter
+Output:
+Namespace(model_name='wss_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='wss', label_filter=True, wsi=False, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+model: VisionTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(16, 16), stride=(16, 16))
+    (norm): Identity()
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (blocks): Sequential(
+    (0): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (1): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (2): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (3): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (4): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (5): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (6): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (7): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (8): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (9): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (10): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (11): Block(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): Attention(
+        (qkv): Linear(in_features=384, out_features=1152, bias=True)
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop): Dropout(p=0.0, inplace=False)
+      )
+    )
+  )
+  (norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+  (pre_logits): Identity()
+  (head): Linear(in_features=384, out_features=3, bias=True)
+)
+Validation Data: 469
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Accessing lmdb file: /home/ge26xaj/projects/fm_histopathology/scripts/cache/monai_cache.lmdb.
+Similarity Test:  [0/3]  eta: 0:00:50  loss: 0.0019 (0.0019)  f1: 1.0000 (1.0000)  acc: 1.0000 (1.0000)  time: 16.9413  data: 1.0687  max mem: 0
+Similarity Test:  [2/3]  eta: 0:00:12  loss: 0.0021 (0.0037)  f1: 0.9965 (0.9979)  acc: 0.9896 (0.9936)  time: 12.9219  data: 0.3563  max mem: 0
+Similarity Test: Total time: 0:00:38 (12.9565 s / it)
+469
+{0.5963539445628974} {0.5963539445628974} {0.5963539445628974} {0.590449450062277} {0.5863539445628998}
+{0.30041933191187026} {0.30041933191187026} {0.30041933191187026} {0.36749118260107055} {0.27505330490405117}
+{0.18323667377398714} {0.18323667377398714} {0.18323667377398714} {0.2680180664911664} {0.24733475479744135}
+
+Errors:
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  1%|▏         | 7/469 [00:00<00:07, 63.10it/s]
+  3%|▎         | 15/469 [00:00<00:06, 71.20it/s]
+  5%|▍         | 23/469 [00:00<00:06, 69.72it/s]
+  7%|▋         | 31/469 [00:00<00:06, 71.74it/s]
+  8%|▊         | 39/469 [00:00<00:05, 74.26it/s]
+ 10%|█         | 47/469 [00:00<00:05, 74.54it/s]
+ 12%|█▏        | 55/469 [00:00<00:05, 75.49it/s]
+ 13%|█▎        | 63/469 [00:00<00:05, 76.47it/s]
+ 15%|█▌        | 71/469 [00:00<00:05, 74.30it/s]
+ 17%|█▋        | 79/469 [00:01<00:05, 74.69it/s]
+ 19%|█▊        | 87/469 [00:01<00:05, 72.31it/s]
+ 20%|██        | 95/469 [00:01<00:05, 73.69it/s]
+ 22%|██▏       | 103/469 [00:01<00:04, 74.93it/s]
+ 24%|██▎       | 111/469 [00:01<00:04, 75.37it/s]
+ 25%|██▌       | 119/469 [00:01<00:04, 74.94it/s]
+ 27%|██▋       | 127/469 [00:01<00:04, 74.75it/s]
+ 29%|██▉       | 135/469 [00:01<00:04, 74.58it/s]
+ 30%|███       | 143/469 [00:01<00:04, 76.09it/s]
+ 32%|███▏      | 151/469 [00:02<00:04, 76.42it/s]
+ 34%|███▍      | 159/469 [00:02<00:04, 75.92it/s]
+ 36%|███▌      | 167/469 [00:02<00:03, 76.62it/s]
+ 38%|███▊      | 176/469 [00:02<00:03, 78.16it/s]
+ 39%|███▉      | 184/469 [00:02<00:03, 77.52it/s]
+ 41%|████      | 193/469 [00:02<00:03, 78.61it/s]
+ 43%|████▎     | 202/469 [00:02<00:03, 79.13it/s]
+ 45%|████▍     | 210/469 [00:02<00:03, 78.25it/s]
+ 46%|████▋     | 218/469 [00:02<00:03, 73.17it/s]
+ 48%|████▊     | 227/469 [00:03<00:03, 75.90it/s]
+ 50%|█████     | 236/469 [00:03<00:02, 77.78it/s]
+ 52%|█████▏    | 244/469 [00:03<00:02, 76.28it/s]
+ 54%|█████▎    | 252/469 [00:03<00:02, 76.46it/s]
+ 55%|█████▌    | 260/469 [00:03<00:02, 75.45it/s]
+ 57%|█████▋    | 268/469 [00:03<00:02, 74.58it/s]
+ 59%|█████▉    | 276/469 [00:03<00:02, 74.52it/s]
+ 61%|██████    | 285/469 [00:03<00:02, 77.06it/s]
+ 62%|██████▏   | 293/469 [00:03<00:02, 77.27it/s]
+ 64%|██████▍   | 301/469 [00:03<00:02, 76.43it/s]
+ 66%|██████▌   | 309/469 [00:04<00:02, 75.70it/s]
+ 68%|██████▊   | 317/469 [00:04<00:01, 76.18it/s]
+ 69%|██████▉   | 325/469 [00:04<00:01, 74.51it/s]
+ 71%|███████   | 333/469 [00:04<00:01, 75.06it/s]
+ 73%|███████▎  | 341/469 [00:04<00:01, 76.39it/s]
+ 74%|███████▍  | 349/469 [00:04<00:01, 76.52it/s]
+ 76%|███████▌  | 357/469 [00:04<00:01, 76.14it/s]
+ 78%|███████▊  | 365/469 [00:04<00:01, 72.30it/s]
+ 80%|███████▉  | 373/469 [00:04<00:01, 72.45it/s]
+ 81%|████████  | 381/469 [00:05<00:01, 72.76it/s]
+ 83%|████████▎ | 389/469 [00:05<00:01, 71.71it/s]
+ 85%|████████▍ | 397/469 [00:05<00:00, 73.84it/s]
+ 86%|████████▋ | 405/469 [00:05<00:00, 74.43it/s]
+ 88%|████████▊ | 413/469 [00:05<00:00, 75.58it/s]
+ 90%|████████▉ | 421/469 [00:05<00:00, 76.63it/s]
+ 91%|█████████▏| 429/469 [00:05<00:00, 76.10it/s]
+ 93%|█████████▎| 438/469 [00:05<00:00, 77.59it/s]
+ 95%|█████████▌| 446/469 [00:05<00:00, 77.16it/s]
+ 97%|█████████▋| 455/469 [00:06<00:00, 78.89it/s]
+ 99%|█████████▊| 463/469 [00:06<00:00, 79.05it/s]
+100%|██████████| 469/469 [00:06<00:00, 75.58it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  4%|▍         | 20/469 [00:00<00:02, 199.87it/s]
+ 10%|█         | 48/469 [00:00<00:01, 244.43it/s]
+ 16%|█▌        | 75/469 [00:00<00:01, 253.43it/s]
+ 22%|██▏       | 101/469 [00:00<00:01, 230.46it/s]
+ 28%|██▊       | 131/469 [00:00<00:01, 253.69it/s]
+ 34%|███▎      | 158/469 [00:00<00:01, 257.73it/s]
+ 39%|███▉      | 185/469 [00:00<00:01, 236.74it/s]
+ 45%|████▍     | 210/469 [00:00<00:01, 217.40it/s]
+ 51%|█████     | 237/469 [00:01<00:01, 228.89it/s]
+ 56%|█████▌    | 261/469 [00:01<00:00, 215.29it/s]
+ 61%|██████    | 285/469 [00:01<00:00, 221.68it/s]
+ 66%|██████▌   | 308/469 [00:01<00:00, 217.52it/s]
+ 71%|███████   | 331/469 [00:01<00:00, 206.76it/s]
+ 75%|███████▌  | 352/469 [00:01<00:00, 200.19it/s]
+ 81%|████████  | 379/469 [00:01<00:00, 216.32it/s]
+ 86%|████████▌ | 401/469 [00:01<00:00, 204.92it/s]
+ 90%|████████▉ | 422/469 [00:01<00:00, 199.41it/s]
+ 95%|█████████▍| 444/469 [00:02<00:00, 204.03it/s]
+100%|█████████▉| 468/469 [00:02<00:00, 211.09it/s]
+100%|██████████| 469/469 [00:02<00:00, 219.37it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  4%|▍         | 21/469 [00:00<00:02, 203.27it/s]
+ 11%|█         | 50/469 [00:00<00:01, 248.84it/s]
+ 16%|█▌        | 75/469 [00:00<00:01, 226.28it/s]
+ 21%|██        | 98/469 [00:00<00:01, 217.00it/s]
+ 26%|██▌       | 120/469 [00:00<00:01, 217.77it/s]
+ 31%|███▏      | 147/469 [00:00<00:01, 233.65it/s]
+ 36%|███▋      | 171/469 [00:00<00:01, 223.19it/s]
+ 42%|████▏     | 198/469 [00:00<00:01, 235.44it/s]
+ 47%|████▋     | 222/469 [00:00<00:01, 216.41it/s]
+ 52%|█████▏    | 244/469 [00:01<00:01, 205.76it/s]
+ 57%|█████▋    | 266/469 [00:01<00:00, 208.34it/s]
+ 62%|██████▏   | 289/469 [00:01<00:00, 213.35it/s]
+ 66%|██████▋   | 311/469 [00:01<00:00, 204.15it/s]
+ 71%|███████   | 332/469 [00:01<00:00, 197.34it/s]
+ 76%|███████▋  | 358/469 [00:01<00:00, 212.27it/s]
+ 81%|████████  | 380/469 [00:01<00:00, 203.18it/s]
+ 86%|████████▌ | 401/469 [00:01<00:00, 204.93it/s]
+ 90%|█████████ | 424/469 [00:01<00:00, 210.95it/s]
+ 95%|█████████▌| 446/469 [00:02<00:00, 202.65it/s]
+100%|█████████▉| 467/469 [00:02<00:00, 196.46it/s]
+100%|██████████| 469/469 [00:02<00:00, 210.73it/s]
+
+  0%|          | 0/469 [00:00<?, ?it/s]
+  6%|▌         | 29/469 [00:00<00:01, 284.92it/s]
+ 12%|█▏        | 58/469 [00:00<00:01, 230.30it/s]
+ 18%|█▊        | 85/469 [00:00<00:01, 245.04it/s]
+ 24%|██▎       | 111/469 [00:00<00:01, 232.34it/s]
+ 29%|██▉       | 135/469 [00:00<00:01, 221.30it/s]
+ 34%|███▎      | 158/469 [00:00<00:01, 217.52it/s]
+ 40%|███▉      | 186/469 [00:00<00:01, 233.01it/s]
+ 45%|████▍     | 210/469 [00:00<00:01, 215.15it/s]
+ 49%|████▉     | 232/469 [00:01<00:01, 204.36it/s]
+ 55%|█████▌    | 258/469 [00:01<00:00, 218.15it/s]
+ 60%|█████▉    | 281/469 [00:01<00:00, 207.63it/s]
+ 65%|██████▍   | 303/469 [00:01<00:00, 209.20it/s]
+ 70%|██████▉   | 326/469 [00:01<00:00, 212.36it/s]
+ 74%|███████▍  | 348/469 [00:01<00:00, 203.83it/s]
+ 79%|███████▊  | 369/469 [00:01<00:00, 195.57it/s]
+ 84%|████████▍ | 395/469 [00:01<00:00, 211.25it/s]
+ 89%|████████▉ | 417/469 [00:01<00:00, 201.96it/s]
+ 94%|█████████▎| 439/469 [00:02<00:00, 206.48it/s]
+ 98%|█████████▊| 461/469 [00:02<00:00, 208.90it/s]
+100%|██████████| 469/469 [00:02<00:00, 213.69it/s]
+
+----------------------------------------

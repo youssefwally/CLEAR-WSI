@@ -1,0 +1,62 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_attn_general_pretrained_deit_tiny_patch16_224 --data camelyon_16 --wsi --agg attn
+Output:
+Namespace(model_name='camelyon_16_attn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6611627906976751} {0.6611627906976751} {0.6611627906976751} {0.6546166244531434} {0.6511627906976745}
+3: {0.6389922480620153} {0.6389922480620153} {0.6389922480620153} {0.6428778279748883} {0.6821705426356589}
+5: {0.6299069767441864} {0.6299069767441864} {0.6299069767441864} {0.6354702132220473} {0.7131782945736435}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+100%|██████████| 129/129 [00:00<00:00, 1414.53it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_attn_general_pretrained_deit_tiny_patch16_224 --data camelyon_16 --wsi --agg attn --label_filter
+Output:
+Namespace(model_name='camelyon_16_attn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6689147286821714} {0.6689147286821714} {0.6689147286821714} {0.662291810576407} {0.6589147286821705}
+3: {0.6260723514211883} {0.6260723514211883} {0.6260723514211883} {0.6342139500834798} {0.6821705426356589}
+5: {0.6144031007751939} {0.6144031007751939} {0.6144031007751939} {0.6239025405129033} {0.6434108527131783}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 80%|███████▉  | 103/129 [00:00<00:00, 1028.18it/s]
+100%|██████████| 129/129 [00:00<00:00, 1037.83it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_attn_pretrained_mocov3_tiny_checkpoint --data camelyon_16 --wsi --agg attn
+Output:
+Namespace(model_name='camelyon_16_attn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6379069767441865} {0.6379069767441865} {0.6379069767441865} {0.6315910660833531} {0.627906976744186}
+3: {0.6157364341085271} {0.6157364341085271} {0.6157364341085271} {0.619730638855609} {0.6201550387596899}
+5: {0.6221550387596901} {0.6221550387596901} {0.6221550387596901} {0.6225443939104877} {0.6666666666666666}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+100%|██████████| 129/129 [00:00<00:00, 1445.63it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_attn_pretrained_mocov3_tiny_checkpoint --data camelyon_16 --wsi --agg attn --label_filter
+Output:
+Namespace(model_name='camelyon_16_attn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6301550387596903} {0.6301550387596903} {0.6301550387596903} {0.6239158799600897} {0.6201550387596899}
+3: {0.6157364341085272} {0.6157364341085272} {0.6157364341085272} {0.6169720767671434} {0.627906976744186}
+5: {0.6237054263565893} {0.6237054263565893} {0.6237054263565893} {0.6215617781079202} {0.6666666666666666}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 71%|███████▏  | 92/129 [00:00<00:00, 914.73it/s]
+100%|██████████| 129/129 [00:00<00:00, 905.65it/s]
+
+----------------------------------------

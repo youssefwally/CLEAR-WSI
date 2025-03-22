@@ -1,0 +1,27 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_uni_attn --data camelyon_16 --agg attn --wsi --uni
+Output:
+Namespace(model_name='camelyon_16_uni_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='attn', uni=True, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+
+Errors:
+Traceback (most recent call last):
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 612, in <module>
+    main(args)
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 577, in main
+    embeddings = get_wsi_embeddings(args.model_name, args.agg, args.uni, args.gigapath)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 277, in get_wsi_embeddings
+    checkpoint = torch.load(os.path.join(models_root_path, model_name, "best_checkpoint.pth"), map_location='cpu')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ge26xaj/miniconda3/envs/histopathology_env/lib/python3.11/site-packages/torch/serialization.py", line 1065, in load
+    with _open_file_like(f, 'rb') as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ge26xaj/miniconda3/envs/histopathology_env/lib/python3.11/site-packages/torch/serialization.py", line 468, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ge26xaj/miniconda3/envs/histopathology_env/lib/python3.11/site-packages/torch/serialization.py", line 449, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../models/camelyon_16_uni_attn/best_checkpoint.pth'
+
+----------------------------------------

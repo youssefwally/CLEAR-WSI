@@ -1,0 +1,16 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_uni --data camelyon_16 --wsi --agg attn --uni
+Output:
+Namespace(model_name='camelyon_16_full_wattn_uni', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='attn', uni=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.9092248062015523} {0.9092248062015523} {0.9092248062015523} {0.9002225803975747} {0.8992248062015504}
+3: {0.8999741602067166} {0.8999741602067166} {0.8999741602067166} {0.897885099912972} {0.8992248062015504}
+5: {0.8919224806201538} {0.8919224806201538} {0.8919224806201538} {0.8923832227669826} {0.8992248062015504}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 74%|███████▎  | 95/129 [00:00<00:00, 943.75it/s]
+100%|██████████| 129/129 [00:00<00:00, 942.03it/s]
+
+----------------------------------------

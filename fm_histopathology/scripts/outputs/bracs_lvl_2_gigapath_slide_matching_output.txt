@@ -1,0 +1,15 @@
+Running command: python ./slide_matching.py --model-name bracs_lvl_2_gigapath_attn --data bracs --agg attn --wsi --gigapath
+Output:
+Namespace(model_name='bracs_lvl_2_gigapath_attn', k=5, search_image_index=0, scratch='', data='bracs', label_filter=False, filter_type='pred', wsi=True, agg='attn', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.5502298850574712} {0.5502298850574712} {0.5502298850574712} {0.5447820644133381} {0.5402298850574713}
+3: {0.5473946360153257} {0.5473946360153257} {0.5473946360153257} {0.5436559424428312} {0.6206896551724138}
+5: {0.5468275862068962} {0.5468275862068962} {0.5468275862068962} {0.544382470226072} {0.6436781609195402}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+100%|██████████| 87/87 [00:00<00:00, 1808.61it/s]
+
+----------------------------------------

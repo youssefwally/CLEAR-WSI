@@ -1,0 +1,113 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224 --data camelyon_16 --wsi --agg attn --label_filter --filter-type pred
+Output:
+Namespace(model_name='camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6999224806201559} {0.6999224806201559} {0.6999224806201559} {0.6929925550694608} {0.689922480620155}
+3: {0.6467441860465113} {0.6467441860465113} {0.6467441860465113} {0.6545166946478138} {0.6744186046511628}
+5: {0.6547131782945734} {0.6547131782945734} {0.6547131782945734} {0.6584483203487097} {0.7054263565891473}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 47%|████▋     | 61/129 [00:00<00:00, 602.53it/s]
+ 96%|█████████▌| 124/129 [00:00<00:00, 618.05it/s]
+100%|██████████| 129/129 [00:00<00:00, 620.34it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224 --data camelyon_16 --wsi --agg attn --label_filter --filter-type mv
+Output:
+Namespace(model_name='camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='mv', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.7076744186046524} {0.7076744186046524} {0.7076744186046524} {0.7006677411927243} {0.6976744186046512}
+3: {0.6544961240310071} {0.6544961240310071} {0.6544961240310071} {0.6586115965472723} {0.689922480620155}
+5: {0.6671162790697671} {0.6671162790697671} {0.6671162790697671} {0.6694960132826911} {0.7209302325581395}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+  9%|▉         | 12/129 [00:00<00:01, 115.04it/s]
+ 19%|█▉        | 25/129 [00:00<00:00, 121.41it/s]
+ 33%|███▎      | 43/129 [00:00<00:00, 146.14it/s]
+ 47%|████▋     | 61/129 [00:00<00:00, 158.92it/s]
+ 62%|██████▏   | 80/129 [00:00<00:00, 168.08it/s]
+ 76%|███████▌  | 98/129 [00:00<00:00, 168.89it/s]
+ 91%|█████████ | 117/129 [00:00<00:00, 173.26it/s]
+100%|██████████| 129/129 [00:00<00:00, 161.71it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224 --data camelyon_16 --wsi --agg attn --label_filter  --filter-type gt
+Output:
+Namespace(model_name='camelyon_16_full_wattn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='gt', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.8472093023255832} {0.8472093023255832} {0.8472093023255832} {0.838821091411467} {0.8372093023255814}
+3: {0.7552713178294573} {0.7552713178294573} {0.7552713178294573} {0.7692186095927482} {0.8294573643410853}
+5: {0.7477364341085272} {0.7477364341085272} {0.7477364341085272} {0.7605035541142654} {0.8217054263565892}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 24%|██▍       | 31/129 [00:00<00:00, 306.06it/s]
+ 48%|████▊     | 62/129 [00:00<00:00, 291.50it/s]
+ 85%|████████▌ | 110/129 [00:00<00:00, 371.51it/s]
+100%|██████████| 129/129 [00:00<00:00, 364.65it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint --data camelyon_16 --wsi --agg attn --label_filter --filter-type pred
+Output:
+Namespace(model_name='camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.6766666666666673} {0.6766666666666673} {0.6766666666666673} {0.6699669966996705} {0.6666666666666666}
+3: {0.6725839793281647} {0.6725839793281647} {0.6725839793281647} {0.6709821847121287} {0.7209302325581395}
+5: {0.6717674418604653} {0.6717674418604653} {0.6717674418604653} {0.6706884768318752} {0.7286821705426356}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 61%|██████    | 79/129 [00:00<00:00, 786.26it/s]
+100%|██████████| 129/129 [00:00<00:00, 802.55it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint --data camelyon_16 --wsi --agg attn --label_filter --filter-type mv
+Output:
+Namespace(model_name='camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='mv', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.7619379844961253} {0.7619379844961253} {0.7619379844961253} {0.7543940440555688} {0.751937984496124}
+3: {0.6725839793281648} {0.6725839793281648} {0.6725839793281648} {0.6731807902416236} {0.7209302325581395}
+5: {0.6733178294573645} {0.6733178294573645} {0.6733178294573645} {0.6704926950575139} {0.7364341085271318}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 10%|█         | 13/129 [00:00<00:00, 120.17it/s]
+ 20%|██        | 26/129 [00:00<00:00, 123.04it/s]
+ 35%|███▍      | 45/129 [00:00<00:00, 151.72it/s]
+ 50%|████▉     | 64/129 [00:00<00:00, 164.89it/s]
+ 64%|██████▍   | 83/129 [00:00<00:00, 171.69it/s]
+ 79%|███████▉  | 102/129 [00:00<00:00, 176.42it/s]
+ 93%|█████████▎| 120/129 [00:00<00:00, 177.29it/s]
+100%|██████████| 129/129 [00:00<00:00, 166.02it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint --data camelyon_16 --wsi --agg attn --label_filter --filter-type gt
+Output:
+Namespace(model_name='camelyon_16_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='gt', wsi=True, agg='attn')
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.661162790697675} {0.661162790697675} {0.661162790697675} {0.6546166244531436} {0.6511627906976745}
+3: {0.7759431524547804} {0.7759431524547804} {0.7759431524547804} {0.7487853208018442} {0.9069767441860465}
+5: {0.7771937984496127} {0.7771937984496127} {0.7771937984496127} {0.7580152326693735} {0.9302325581395349}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 24%|██▍       | 31/129 [00:00<00:00, 309.44it/s]
+ 48%|████▊     | 62/129 [00:00<00:00, 304.36it/s]
+ 85%|████████▌ | 110/129 [00:00<00:00, 382.71it/s]
+100%|██████████| 129/129 [00:00<00:00, 373.72it/s]
+
+----------------------------------------

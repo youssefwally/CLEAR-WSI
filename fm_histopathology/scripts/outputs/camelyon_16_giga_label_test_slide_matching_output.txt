@@ -1,0 +1,56 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_gigapath_attn --data camelyon_16 --wsi --label_filter --filter-type pred --gigapath
+Output:
+Namespace(model_name='camelyon_16_gigapath_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.738682170542637} {0.738682170542637} {0.738682170542637} {0.7313684856857783} {0.7286821705426356}
+3: {0.6674160206718341} {0.6674160206718341} {0.6674160206718341} {0.6799483717630679} {0.7131782945736435}
+5: {0.6438604651162793} {0.6438604651162793} {0.6438604651162793} {0.6599250230849321} {0.6589147286821705}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 54%|█████▍    | 70/129 [00:00<00:00, 697.11it/s]
+100%|██████████| 129/129 [00:00<00:00, 685.85it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_gigapath_attn --data camelyon_16 --wsi --label_filter --filter-type mv --gigapath
+Output:
+Namespace(model_name='camelyon_16_gigapath_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='mv', wsi=True, agg='attn', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.7464341085271329} {0.7464341085271329} {0.7464341085271329} {0.7390436718090417} {0.7364341085271318}
+3: {0.6803359173126612} {0.6803359173126612} {0.6803359173126612} {0.6927071515539349} {0.7209302325581395}
+5: {0.6469612403100776} {0.6469612403100776} {0.6469612403100776} {0.6615904622086455} {0.6821705426356589}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+  9%|▉         | 12/129 [00:00<00:01, 115.96it/s]
+ 19%|█▊        | 24/129 [00:00<00:01, 102.09it/s]
+ 33%|███▎      | 42/129 [00:00<00:00, 134.06it/s]
+ 47%|████▋     | 61/129 [00:00<00:00, 153.09it/s]
+ 62%|██████▏   | 80/129 [00:00<00:00, 164.18it/s]
+ 75%|███████▌  | 97/129 [00:00<00:00, 141.40it/s]
+ 87%|████████▋ | 112/129 [00:00<00:00, 124.68it/s]
+100%|██████████| 129/129 [00:00<00:00, 136.75it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_gigapath_attn --data camelyon_16 --wsi --label_filter  --filter-type gt --gigapath
+Output:
+Namespace(model_name='camelyon_16_gigapath_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='gt', wsi=True, agg='attn', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.699922480620156} {0.699922480620156} {0.699922480620156} {0.692992555069461} {0.689922480620155}
+3: {0.734599483204134} {0.734599483204134} {0.734599483204134} {0.7265003974010663} {0.7674418604651163}
+5: {0.7182790697674418} {0.7182790697674418} {0.7182790697674418} {0.7170617612754459} {0.7674418604651163}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 26%|██▋       | 34/129 [00:00<00:00, 332.36it/s]
+ 53%|█████▎    | 68/129 [00:00<00:00, 332.59it/s]
+ 92%|█████████▏| 119/129 [00:00<00:00, 409.93it/s]
+100%|██████████| 129/129 [00:00<00:00, 394.60it/s]
+
+----------------------------------------

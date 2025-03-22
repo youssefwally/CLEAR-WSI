@@ -1,0 +1,52 @@
+Running command: python ./slide_matching.py --model-name bracs_uni_attn --data bracs --agg attn --wsi --label_filter --filter-type pred --uni
+Output:
+Namespace(model_name='bracs_uni_attn', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='pred', wsi=True, agg='attn', uni=True, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.44678160919540266} {0.44678160919540266} {0.44678160919540266} {0.4423580289063388} {0.4367816091954023}
+3: {0.45544061302681976} {0.45544061302681976} {0.45544061302681976} {0.4494470177235031} {0.4827586206896552}
+5: {0.427287356321839} {0.427287356321839} {0.427287356321839} {0.4319092519294499} {0.5172413793103449}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 53%|█████▎    | 46/87 [00:00<00:00, 456.38it/s]
+100%|██████████| 87/87 [00:00<00:00, 445.36it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name bracs_uni_attn --data bracs --agg attn --wsi --label_filter --filter-type mv --uni
+Output:
+Namespace(model_name='bracs_uni_attn', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='mv', wsi=True, agg='attn', uni=True, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.07183908045977007} {0.07183908045977007} {0.07183908045977007} {0.07112780243541596} {0.06896551724137931}
+3: {0.08137931034482758} {0.08137931034482758} {0.08137931034482758} {0.08066953098707433} {0.09195402298850575}
+5: {0.11103448275862066} {0.11103448275862066} {0.11103448275862066} {0.10717111290179898} {0.10344827586206896}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 20%|█▉        | 17/87 [00:00<00:00, 159.77it/s]
+ 38%|███▊      | 33/87 [00:00<00:00, 154.07it/s]
+ 62%|██████▏   | 54/87 [00:00<00:00, 178.10it/s]
+ 86%|████████▌ | 75/87 [00:00<00:00, 187.80it/s]
+100%|██████████| 87/87 [00:00<00:00, 181.45it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name bracs_uni_attn --data bracs --agg attn --wsi --label_filter  --filter-type gt --uni
+Output:
+Namespace(model_name='bracs_uni_attn', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='gt', wsi=True, agg='attn', uni=True, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.10632183908045972} {0.10632183908045972} {0.10632183908045972} {0.1052691476044156} {0.10344827586206896}
+3: {0.11590038314176246} {0.11590038314176246} {0.11590038314176246} {0.11236050651246061} {0.16091954022988506}
+5: {0.11781609195402297} {0.11781609195402297} {0.11781609195402297} {0.1145770194731014} {0.14942528735632185}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 31%|███       | 27/87 [00:00<00:00, 256.77it/s]
+ 66%|██████▌   | 57/87 [00:00<00:00, 281.48it/s]
+100%|██████████| 87/87 [00:00<00:00, 347.27it/s]
+
+----------------------------------------

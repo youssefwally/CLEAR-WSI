@@ -1,0 +1,33 @@
+Parameters:
+wsi_folder: ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/
+csv_file: ./yottixel_format_csv.csv
+output_folder: ./results/
+kmeans_clusters: 9
+tissue_threshold: 0.7
+percentage_selected: 5
+batch_size: 512
+top_n: 1
+gpu: 2
+Indexing Elapsed Time in minutes: 98 minutes
+Indexing Elapsed Time in seconds: 5890.34 seconds
+Searching Elapsed Time in minutes for top 1: 1 minutes
+Searching Elapsed Time in seconds for top 1: 83.88 seconds
+Confusion Matrix:
+[[66 14]
+ [17 32]]
+Labels:
+['normal' 'tumor']
+Classification Report:
+              precision    recall  f1-score   support
+
+      normal       0.80      0.82      0.81        80
+       tumor       0.70      0.65      0.67        49
+
+    accuracy                           0.76       129
+   macro avg       0.75      0.74      0.74       129
+weighted avg       0.76      0.76      0.76       129
+
+Our Mertrics:
+{'percision': 0.7696899224806214, 'recall': 0.7696899224806214, 'NDCG': 0.7620692301788322, 'f1': 0.7696899224806214, 'correct_majority_vote': 0.7596899224806202}
+Errors:
+[]

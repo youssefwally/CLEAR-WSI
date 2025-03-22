@@ -1,0 +1,49 @@
+Running command: python ./slide_matching.py --model-name bracs_full_wattn_pretrained_mocov3_tiny_checkpoint --data bracs --agg attn --wsi --label_filter --filter-type pred
+Output:
+Namespace(model_name='bracs_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='pred', wsi=True, agg='attn', uni=False, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.2858620689655183} {0.2858620689655183} {0.2858620689655183} {0.2830317514510067} {0.27586206896551724}
+3: {0.2868582375478928} {0.2868582375478928} {0.2868582375478928} {0.28812792244399743} {0.25287356321839083}
+5: {0.2893563218390805} {0.2893563218390805} {0.2893563218390805} {0.2899285022209592} {0.2988505747126437}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 85%|████████▌ | 74/87 [00:00<00:00, 734.22it/s]
+100%|██████████| 87/87 [00:00<00:00, 732.39it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name bracs_full_wattn_pretrained_mocov3_tiny_checkpoint --data bracs --agg attn --wsi --label_filter --filter-type mv
+Output:
+Namespace(model_name='bracs_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='mv', wsi=True, agg='attn', uni=False, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.03689655172413792} {0.03689655172413792} {0.03689655172413792} {0.036531239330829635} {0.034482758620689655}
+3: {0.027816091954023004} {0.027816091954023004} {0.027816091954023004} {0.02894289721920948} {0.022988505747126436}
+5: {0.05121839080459768} {0.05121839080459768} {0.05121839080459768} {0.046246550194514305} {0.022988505747126436}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 38%|███▊      | 33/87 [00:00<00:00, 327.03it/s]
+ 76%|███████▌  | 66/87 [00:00<00:00, 312.69it/s]
+100%|██████████| 87/87 [00:00<00:00, 314.02it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name bracs_full_wattn_pretrained_mocov3_tiny_checkpoint --data bracs --agg attn --wsi --label_filter  --filter-type gt
+Output:
+Namespace(model_name='bracs_full_wattn_pretrained_mocov3_tiny_checkpoint', k=5, search_image_index=0, scratch='', data='bracs', label_filter=True, filter_type='gt', wsi=True, agg='attn', uni=False, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.014367816091954023} {0.014367816091954023} {0.014367816091954023} {0.014225560487083191} {0.011494252873563218}
+3: {0.04310344827586207} {0.04310344827586207} {0.04310344827586207} {0.03847564741249521} {0.011494252873563218}
+5: {0.04885057471264367} {0.04885057471264367} {0.04885057471264367} {0.04389508885240227} {0.034482758620689655}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+ 79%|███████▉  | 69/87 [00:00<00:00, 680.40it/s]
+100%|██████████| 87/87 [00:00<00:00, 624.76it/s]
+
+----------------------------------------

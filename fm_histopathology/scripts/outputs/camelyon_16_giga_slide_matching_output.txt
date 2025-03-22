@@ -1,0 +1,18 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_gigapath_attn --data camelyon_16 --agg else --wsi --gigapath
+Output:
+Namespace(model_name='camelyon_16_gigapath_attn', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=False, filter_type='pred', wsi=True, agg='else', uni=False, gigapath=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+
+Errors:
+Traceback (most recent call last):
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 623, in <module>
+    main(args)
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 588, in main
+    embeddings = get_wsi_embeddings(args.model_name, args.agg, args.uni, args.gigapath)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ge26xaj/projects/fm_histopathology/scripts/./slide_matching.py", line 422, in get_wsi_embeddings
+    all_preds.extend(pred)
+                     ^^^^
+UnboundLocalError: cannot access local variable 'pred' where it is not associated with a value
+
+----------------------------------------

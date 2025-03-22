@@ -1,0 +1,57 @@
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_uni --data camelyon_16 --wsi --agg attn --label_filter --filter-type pred --uni
+Output:
+Namespace(model_name='camelyon_16_full_wattn_uni', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='pred', wsi=True, agg='attn', uni=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.9092248062015523} {0.9092248062015523} {0.9092248062015523} {0.9002225803975747} {0.8992248062015504}
+3: {0.8973901808785513} {0.8973901808785513} {0.8973901808785513} {0.8956006119169972} {0.8914728682170543}
+5: {0.8903720930232546} {0.8903720930232546} {0.8903720930232546} {0.8907300215139897} {0.8992248062015504}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 50%|████▉     | 64/129 [00:00<00:00, 635.15it/s]
+ 99%|█████████▉| 128/129 [00:00<00:00, 627.66it/s]
+100%|██████████| 129/129 [00:00<00:00, 629.16it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_uni --data camelyon_16 --wsi --agg attn --label_filter --filter-type mv --uni
+Output:
+Namespace(model_name='camelyon_16_full_wattn_uni', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='mv', wsi=True, agg='attn', uni=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.9092248062015523} {0.9092248062015523} {0.9092248062015523} {0.9002225803975747} {0.8992248062015504}
+3: {0.902558139534882} {0.902558139534882} {0.902558139534882} {0.8996955138164561} {0.8992248062015504}
+5: {0.893472868217053} {0.893472868217053} {0.893472868217053} {0.893168637926084} {0.8992248062015504}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+  9%|▉         | 12/129 [00:00<00:01, 111.53it/s]
+ 19%|█▉        | 25/129 [00:00<00:00, 119.47it/s]
+ 34%|███▍      | 44/129 [00:00<00:00, 148.77it/s]
+ 48%|████▊     | 62/129 [00:00<00:00, 160.43it/s]
+ 63%|██████▎   | 81/129 [00:00<00:00, 169.61it/s]
+ 76%|███████▌  | 98/129 [00:00<00:00, 168.24it/s]
+ 91%|█████████ | 117/129 [00:00<00:00, 172.30it/s]
+100%|██████████| 129/129 [00:00<00:00, 161.66it/s]
+
+----------------------------------------
+Running command: python ./slide_matching.py --model-name camelyon_16_full_wattn_uni --data camelyon_16 --wsi --agg attn --label_filter  --filter-type gt --uni
+Output:
+Namespace(model_name='camelyon_16_full_wattn_uni', k=5, search_image_index=0, scratch='', data='camelyon_16', label_filter=True, filter_type='gt', wsi=True, agg='attn', uni=True)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+129
+1: {0.9789922480620177} {0.9789922480620177} {0.9789922480620177} {0.9692992555069462} {0.9689922480620154}
+3: {0.9826614987080082} {0.9826614987080082} {0.9826614987080082} {0.9768528108807207} {0.9922480620155039}
+5: {0.9740930232558125} {0.9740930232558125} {0.9740930232558125} {0.9723088522421761} {1.0}
+
+Errors:
+
+  0%|          | 0/129 [00:00<?, ?it/s]
+ 25%|██▍       | 32/129 [00:00<00:00, 319.66it/s]
+ 50%|████▉     | 64/129 [00:00<00:00, 318.50it/s]
+ 86%|████████▌ | 111/129 [00:00<00:00, 386.16it/s]
+100%|██████████| 129/129 [00:00<00:00, 377.02it/s]
+
+----------------------------------------

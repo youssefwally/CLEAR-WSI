@@ -1,0 +1,15 @@
+Running command: python ./slide_matching.py --model-name bracs_full_wattn_general_pretrained_deit_tiny_patch16_224 --data bracs --agg attn --wsi
+Output:
+Namespace(model_name='bracs_full_wattn_general_pretrained_deit_tiny_patch16_224', k=5, search_image_index=0, scratch='', data='bracs', label_filter=False, filter_type='pred', wsi=True, agg='attn', uni=False, gigapath=False)
+In module products sys.path[0], __package__ == /home/ge26xaj/./projects/fm_histopathology/scripts/ None
+87
+1: {0.37781609195402394} {0.37781609195402394} {0.37781609195402394} {0.37407533856833913} {0.367816091954023}
+3: {0.3290038314176245} {0.3290038314176245} {0.3290038314176245} {0.3391316520697328} {0.3218390804597701}
+5: {0.30544827586206924} {0.30544827586206924} {0.30544827586206924} {0.319804439368762} {0.3448275862068966}
+
+Errors:
+
+  0%|          | 0/87 [00:00<?, ?it/s]
+100%|██████████| 87/87 [00:00<00:00, 1296.07it/s]
+
+----------------------------------------

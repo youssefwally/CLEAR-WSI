@@ -1,0 +1,277 @@
+INFO 2024-12-08 20:25:23,896 run_yottixel.py <module> 91 logger created
+INFO 2024-12-08 20:25:23,896 run_yottixel.py <module> 95 Starting the pipeline at Sun Dec  8 20:25:23 2024
+INFO 2024-12-08 20:25:23,897 run_yottixel.py <module> 105 Slide 1 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_001.tifTotal Elapsed Time: 0 minutes
+DEBUG 2024-12-08 20:25:44,989 attrs.py __getitem__ 78 Creating converter from 3 to 5
+INFO 2024-12-08 20:26:56,716 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_001.tif saved
+INFO 2024-12-08 20:26:56,716 run_yottixel.py <module> 105 Slide 2 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_002.tifTotal Elapsed Time: 2 minutes
+INFO 2024-12-08 20:27:36,308 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_002.tif saved
+INFO 2024-12-08 20:27:36,308 run_yottixel.py <module> 105 Slide 3 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_003.tifTotal Elapsed Time: 2 minutes
+INFO 2024-12-08 20:28:11,037 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_003.tif saved
+INFO 2024-12-08 20:28:11,037 run_yottixel.py <module> 105 Slide 4 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_004.tifTotal Elapsed Time: 3 minutes
+INFO 2024-12-08 20:28:56,905 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_004.tif saved
+INFO 2024-12-08 20:28:56,905 run_yottixel.py <module> 105 Slide 5 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_005.tifTotal Elapsed Time: 4 minutes
+INFO 2024-12-08 20:29:27,331 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_005.tif saved
+INFO 2024-12-08 20:29:27,331 run_yottixel.py <module> 105 Slide 6 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_006.tifTotal Elapsed Time: 4 minutes
+INFO 2024-12-08 20:30:12,102 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_006.tif saved
+INFO 2024-12-08 20:30:12,102 run_yottixel.py <module> 105 Slide 7 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_007.tifTotal Elapsed Time: 5 minutes
+INFO 2024-12-08 20:30:46,671 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_007.tif saved
+INFO 2024-12-08 20:30:46,671 run_yottixel.py <module> 105 Slide 8 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_008.tifTotal Elapsed Time: 5 minutes
+INFO 2024-12-08 20:31:35,505 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_008.tif saved
+INFO 2024-12-08 20:31:35,505 run_yottixel.py <module> 105 Slide 9 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_009.tifTotal Elapsed Time: 6 minutes
+INFO 2024-12-08 20:32:11,970 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_009.tif saved
+INFO 2024-12-08 20:32:11,970 run_yottixel.py <module> 105 Slide 10 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_010.tifTotal Elapsed Time: 7 minutes
+INFO 2024-12-08 20:33:07,579 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_010.tif saved
+INFO 2024-12-08 20:33:07,579 run_yottixel.py <module> 105 Slide 11 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_011.tifTotal Elapsed Time: 8 minutes
+INFO 2024-12-08 20:33:48,743 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_011.tif saved
+INFO 2024-12-08 20:33:48,743 run_yottixel.py <module> 105 Slide 12 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_012.tifTotal Elapsed Time: 8 minutes
+INFO 2024-12-08 20:34:37,191 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_012.tif saved
+INFO 2024-12-08 20:34:37,191 run_yottixel.py <module> 105 Slide 13 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_013.tifTotal Elapsed Time: 9 minutes
+INFO 2024-12-08 20:35:07,699 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_013.tif saved
+INFO 2024-12-08 20:35:07,699 run_yottixel.py <module> 105 Slide 14 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_014.tifTotal Elapsed Time: 10 minutes
+INFO 2024-12-08 20:36:11,749 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_014.tif saved
+INFO 2024-12-08 20:36:11,749 run_yottixel.py <module> 105 Slide 15 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_015.tifTotal Elapsed Time: 11 minutes
+INFO 2024-12-08 20:36:42,656 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_015.tif saved
+INFO 2024-12-08 20:36:42,656 run_yottixel.py <module> 105 Slide 16 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_016.tifTotal Elapsed Time: 11 minutes
+INFO 2024-12-08 20:37:48,019 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_016.tif saved
+INFO 2024-12-08 20:37:48,019 run_yottixel.py <module> 105 Slide 17 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_017.tifTotal Elapsed Time: 12 minutes
+INFO 2024-12-08 20:38:23,685 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_017.tif saved
+INFO 2024-12-08 20:38:23,685 run_yottixel.py <module> 105 Slide 18 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_018.tifTotal Elapsed Time: 13 minutes
+INFO 2024-12-08 20:38:59,367 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_018.tif saved
+INFO 2024-12-08 20:38:59,367 run_yottixel.py <module> 105 Slide 19 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_019.tifTotal Elapsed Time: 14 minutes
+INFO 2024-12-08 20:40:25,466 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_019.tif saved
+INFO 2024-12-08 20:40:25,466 run_yottixel.py <module> 105 Slide 20 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_020.tifTotal Elapsed Time: 15 minutes
+INFO 2024-12-08 20:40:52,621 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_020.tif saved
+INFO 2024-12-08 20:40:52,621 run_yottixel.py <module> 105 Slide 21 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_021.tifTotal Elapsed Time: 15 minutes
+INFO 2024-12-08 20:41:56,514 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_021.tif saved
+INFO 2024-12-08 20:41:56,514 run_yottixel.py <module> 105 Slide 22 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_022.tifTotal Elapsed Time: 17 minutes
+INFO 2024-12-08 20:42:52,111 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_022.tif saved
+INFO 2024-12-08 20:42:52,111 run_yottixel.py <module> 105 Slide 23 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_023.tifTotal Elapsed Time: 17 minutes
+INFO 2024-12-08 20:43:33,425 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_023.tif saved
+INFO 2024-12-08 20:43:33,425 run_yottixel.py <module> 105 Slide 24 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_024.tifTotal Elapsed Time: 18 minutes
+INFO 2024-12-08 20:44:05,027 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_024.tif saved
+INFO 2024-12-08 20:44:05,027 run_yottixel.py <module> 105 Slide 25 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_025.tifTotal Elapsed Time: 19 minutes
+INFO 2024-12-08 20:44:32,096 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_025.tif saved
+INFO 2024-12-08 20:44:32,096 run_yottixel.py <module> 105 Slide 26 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_026.tifTotal Elapsed Time: 19 minutes
+INFO 2024-12-08 20:45:29,292 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_026.tif saved
+INFO 2024-12-08 20:45:29,292 run_yottixel.py <module> 105 Slide 27 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_027.tifTotal Elapsed Time: 20 minutes
+INFO 2024-12-08 20:46:05,401 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_027.tif saved
+INFO 2024-12-08 20:46:05,401 run_yottixel.py <module> 105 Slide 28 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_028.tifTotal Elapsed Time: 21 minutes
+INFO 2024-12-08 20:47:01,328 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_028.tif saved
+INFO 2024-12-08 20:47:01,328 run_yottixel.py <module> 105 Slide 29 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_029.tifTotal Elapsed Time: 22 minutes
+INFO 2024-12-08 20:47:32,574 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_029.tif saved
+INFO 2024-12-08 20:47:32,575 run_yottixel.py <module> 105 Slide 30 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_030.tifTotal Elapsed Time: 22 minutes
+INFO 2024-12-08 20:48:07,953 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_030.tif saved
+INFO 2024-12-08 20:48:07,953 run_yottixel.py <module> 105 Slide 31 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_031.tifTotal Elapsed Time: 23 minutes
+INFO 2024-12-08 20:49:04,790 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_031.tif saved
+INFO 2024-12-08 20:49:04,790 run_yottixel.py <module> 105 Slide 32 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_032.tifTotal Elapsed Time: 24 minutes
+INFO 2024-12-08 20:49:53,261 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_032.tif saved
+INFO 2024-12-08 20:49:53,261 run_yottixel.py <module> 105 Slide 33 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_033.tifTotal Elapsed Time: 24 minutes
+INFO 2024-12-08 20:51:44,849 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_033.tif saved
+INFO 2024-12-08 20:51:44,849 run_yottixel.py <module> 105 Slide 34 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_034.tifTotal Elapsed Time: 26 minutes
+INFO 2024-12-08 20:52:25,735 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_034.tif saved
+INFO 2024-12-08 20:52:25,735 run_yottixel.py <module> 105 Slide 35 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_035.tifTotal Elapsed Time: 27 minutes
+INFO 2024-12-08 20:53:07,500 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_035.tif saved
+INFO 2024-12-08 20:53:07,500 run_yottixel.py <module> 105 Slide 36 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_036.tifTotal Elapsed Time: 28 minutes
+INFO 2024-12-08 20:53:43,300 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_036.tif saved
+INFO 2024-12-08 20:53:43,300 run_yottixel.py <module> 105 Slide 37 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_037.tifTotal Elapsed Time: 28 minutes
+INFO 2024-12-08 20:55:04,734 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_037.tif saved
+INFO 2024-12-08 20:55:04,734 run_yottixel.py <module> 105 Slide 38 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_038.tifTotal Elapsed Time: 30 minutes
+INFO 2024-12-08 20:55:41,460 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_038.tif saved
+INFO 2024-12-08 20:55:41,460 run_yottixel.py <module> 105 Slide 39 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_039.tifTotal Elapsed Time: 30 minutes
+INFO 2024-12-08 20:56:08,914 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_039.tif saved
+INFO 2024-12-08 20:56:08,914 run_yottixel.py <module> 105 Slide 40 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_040.tifTotal Elapsed Time: 31 minutes
+INFO 2024-12-08 20:56:43,248 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_040.tif saved
+INFO 2024-12-08 20:56:43,248 run_yottixel.py <module> 105 Slide 41 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_041.tifTotal Elapsed Time: 31 minutes
+INFO 2024-12-08 20:57:34,746 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_041.tif saved
+INFO 2024-12-08 20:57:34,747 run_yottixel.py <module> 105 Slide 42 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_042.tifTotal Elapsed Time: 32 minutes
+INFO 2024-12-08 20:59:12,409 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_042.tif saved
+INFO 2024-12-08 20:59:12,409 run_yottixel.py <module> 105 Slide 43 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_043.tifTotal Elapsed Time: 34 minutes
+INFO 2024-12-08 20:59:43,586 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_043.tif saved
+INFO 2024-12-08 20:59:43,586 run_yottixel.py <module> 105 Slide 44 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_044.tifTotal Elapsed Time: 34 minutes
+INFO 2024-12-08 21:00:23,104 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_044.tif saved
+INFO 2024-12-08 21:00:23,104 run_yottixel.py <module> 105 Slide 45 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_045.tifTotal Elapsed Time: 35 minutes
+INFO 2024-12-08 21:00:56,185 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_045.tif saved
+INFO 2024-12-08 21:00:56,186 run_yottixel.py <module> 105 Slide 46 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_046.tifTotal Elapsed Time: 36 minutes
+INFO 2024-12-08 21:01:26,320 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_046.tif saved
+INFO 2024-12-08 21:01:26,321 run_yottixel.py <module> 105 Slide 47 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_047.tifTotal Elapsed Time: 36 minutes
+INFO 2024-12-08 21:02:07,948 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_047.tif saved
+INFO 2024-12-08 21:02:07,948 run_yottixel.py <module> 105 Slide 48 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_048.tifTotal Elapsed Time: 37 minutes
+INFO 2024-12-08 21:03:14,472 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_048.tif saved
+INFO 2024-12-08 21:03:14,472 run_yottixel.py <module> 105 Slide 49 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_050.tifTotal Elapsed Time: 38 minutes
+INFO 2024-12-08 21:03:58,992 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_050.tif saved
+INFO 2024-12-08 21:03:58,992 run_yottixel.py <module> 105 Slide 50 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_051.tifTotal Elapsed Time: 39 minutes
+INFO 2024-12-08 21:04:32,711 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_051.tif saved
+INFO 2024-12-08 21:04:32,712 run_yottixel.py <module> 105 Slide 51 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_052.tifTotal Elapsed Time: 39 minutes
+INFO 2024-12-08 21:05:08,824 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_052.tif saved
+INFO 2024-12-08 21:05:08,824 run_yottixel.py <module> 105 Slide 52 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_053.tifTotal Elapsed Time: 40 minutes
+INFO 2024-12-08 21:06:09,526 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_053.tif saved
+INFO 2024-12-08 21:06:09,526 run_yottixel.py <module> 105 Slide 53 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_054.tifTotal Elapsed Time: 41 minutes
+INFO 2024-12-08 21:06:49,988 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_054.tif saved
+INFO 2024-12-08 21:06:49,988 run_yottixel.py <module> 105 Slide 54 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_055.tifTotal Elapsed Time: 41 minutes
+INFO 2024-12-08 21:07:25,628 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_055.tif saved
+INFO 2024-12-08 21:07:25,628 run_yottixel.py <module> 105 Slide 55 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_056.tifTotal Elapsed Time: 42 minutes
+INFO 2024-12-08 21:08:20,925 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_056.tif saved
+INFO 2024-12-08 21:08:20,925 run_yottixel.py <module> 105 Slide 56 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_057.tifTotal Elapsed Time: 43 minutes
+INFO 2024-12-08 21:08:51,411 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_057.tif saved
+INFO 2024-12-08 21:08:51,411 run_yottixel.py <module> 105 Slide 57 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_058.tifTotal Elapsed Time: 43 minutes
+INFO 2024-12-08 21:09:54,183 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_058.tif saved
+INFO 2024-12-08 21:09:54,183 run_yottixel.py <module> 105 Slide 58 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_059.tifTotal Elapsed Time: 45 minutes
+INFO 2024-12-08 21:10:33,817 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_059.tif saved
+INFO 2024-12-08 21:10:33,817 run_yottixel.py <module> 105 Slide 59 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_060.tifTotal Elapsed Time: 45 minutes
+INFO 2024-12-08 21:11:04,504 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_060.tif saved
+INFO 2024-12-08 21:11:04,504 run_yottixel.py <module> 105 Slide 60 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_061.tifTotal Elapsed Time: 46 minutes
+INFO 2024-12-08 21:11:47,501 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_061.tif saved
+INFO 2024-12-08 21:11:47,501 run_yottixel.py <module> 105 Slide 61 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_062.tifTotal Elapsed Time: 46 minutes
+INFO 2024-12-08 21:12:21,186 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_062.tif saved
+INFO 2024-12-08 21:12:21,187 run_yottixel.py <module> 105 Slide 62 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_063.tifTotal Elapsed Time: 47 minutes
+INFO 2024-12-08 21:13:16,879 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_063.tif saved
+INFO 2024-12-08 21:13:16,879 run_yottixel.py <module> 105 Slide 63 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_064.tifTotal Elapsed Time: 48 minutes
+INFO 2024-12-08 21:13:43,633 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_064.tif saved
+INFO 2024-12-08 21:13:43,633 run_yottixel.py <module> 105 Slide 64 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_065.tifTotal Elapsed Time: 48 minutes
+INFO 2024-12-08 21:14:13,241 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_065.tif saved
+INFO 2024-12-08 21:14:13,241 run_yottixel.py <module> 105 Slide 65 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_066.tifTotal Elapsed Time: 49 minutes
+INFO 2024-12-08 21:15:21,425 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_066.tif saved
+INFO 2024-12-08 21:15:21,425 run_yottixel.py <module> 105 Slide 66 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_067.tifTotal Elapsed Time: 50 minutes
+INFO 2024-12-08 21:16:12,180 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_067.tif saved
+INFO 2024-12-08 21:16:12,181 run_yottixel.py <module> 105 Slide 67 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_068.tifTotal Elapsed Time: 51 minutes
+INFO 2024-12-08 21:17:00,898 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_068.tif saved
+INFO 2024-12-08 21:17:00,898 run_yottixel.py <module> 105 Slide 68 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_069.tifTotal Elapsed Time: 52 minutes
+INFO 2024-12-08 21:19:11,098 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_069.tif saved
+INFO 2024-12-08 21:19:11,098 run_yottixel.py <module> 105 Slide 69 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_070.tifTotal Elapsed Time: 54 minutes
+INFO 2024-12-08 21:19:43,621 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_070.tif saved
+INFO 2024-12-08 21:19:43,621 run_yottixel.py <module> 105 Slide 70 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_071.tifTotal Elapsed Time: 54 minutes
+INFO 2024-12-08 21:20:41,608 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_071.tif saved
+INFO 2024-12-08 21:20:41,608 run_yottixel.py <module> 105 Slide 71 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_072.tifTotal Elapsed Time: 55 minutes
+INFO 2024-12-08 21:21:09,028 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_072.tif saved
+INFO 2024-12-08 21:21:09,028 run_yottixel.py <module> 105 Slide 72 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_073.tifTotal Elapsed Time: 56 minutes
+INFO 2024-12-08 21:21:56,770 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_073.tif saved
+INFO 2024-12-08 21:21:56,770 run_yottixel.py <module> 105 Slide 73 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_074.tifTotal Elapsed Time: 57 minutes
+INFO 2024-12-08 21:22:40,986 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_074.tif saved
+INFO 2024-12-08 21:22:40,986 run_yottixel.py <module> 105 Slide 74 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_075.tifTotal Elapsed Time: 57 minutes
+INFO 2024-12-08 21:23:22,165 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_075.tif saved
+INFO 2024-12-08 21:23:22,165 run_yottixel.py <module> 105 Slide 75 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_076.tifTotal Elapsed Time: 58 minutes
+INFO 2024-12-08 21:24:11,374 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_076.tif saved
+INFO 2024-12-08 21:24:11,374 run_yottixel.py <module> 105 Slide 76 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_077.tifTotal Elapsed Time: 59 minutes
+INFO 2024-12-08 21:25:11,876 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_077.tif saved
+INFO 2024-12-08 21:25:11,876 run_yottixel.py <module> 105 Slide 77 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_078.tifTotal Elapsed Time: 60 minutes
+INFO 2024-12-08 21:26:05,783 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_078.tif saved
+INFO 2024-12-08 21:26:05,783 run_yottixel.py <module> 105 Slide 78 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_079.tifTotal Elapsed Time: 61 minutes
+INFO 2024-12-08 21:26:51,252 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_079.tif saved
+INFO 2024-12-08 21:26:51,252 run_yottixel.py <module> 105 Slide 79 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_080.tifTotal Elapsed Time: 61 minutes
+INFO 2024-12-08 21:27:45,176 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_080.tif saved
+INFO 2024-12-08 21:27:45,176 run_yottixel.py <module> 105 Slide 80 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_081.tifTotal Elapsed Time: 62 minutes
+INFO 2024-12-08 21:28:22,457 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_081.tif saved
+INFO 2024-12-08 21:28:22,457 run_yottixel.py <module> 105 Slide 81 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_082.tifTotal Elapsed Time: 63 minutes
+INFO 2024-12-08 21:29:09,115 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_082.tif saved
+INFO 2024-12-08 21:29:09,115 run_yottixel.py <module> 105 Slide 82 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_083.tifTotal Elapsed Time: 64 minutes
+INFO 2024-12-08 21:29:38,922 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_083.tif saved
+INFO 2024-12-08 21:29:38,922 run_yottixel.py <module> 105 Slide 83 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_084.tifTotal Elapsed Time: 64 minutes
+INFO 2024-12-08 21:30:13,576 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_084.tif saved
+INFO 2024-12-08 21:30:13,576 run_yottixel.py <module> 105 Slide 84 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_085.tifTotal Elapsed Time: 65 minutes
+INFO 2024-12-08 21:30:43,353 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_085.tif saved
+INFO 2024-12-08 21:30:43,354 run_yottixel.py <module> 105 Slide 85 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_086.tifTotal Elapsed Time: 65 minutes
+INFO 2024-12-08 21:31:29,996 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_086.tif saved
+INFO 2024-12-08 21:31:29,996 run_yottixel.py <module> 105 Slide 86 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_087.tifTotal Elapsed Time: 66 minutes
+INFO 2024-12-08 21:32:07,459 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_087.tif saved
+INFO 2024-12-08 21:32:07,459 run_yottixel.py <module> 105 Slide 87 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_088.tifTotal Elapsed Time: 67 minutes
+INFO 2024-12-08 21:32:39,807 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_088.tif saved
+INFO 2024-12-08 21:32:39,807 run_yottixel.py <module> 105 Slide 88 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_089.tifTotal Elapsed Time: 67 minutes
+INFO 2024-12-08 21:33:22,576 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_089.tif saved
+INFO 2024-12-08 21:33:22,577 run_yottixel.py <module> 105 Slide 89 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_090.tifTotal Elapsed Time: 68 minutes
+INFO 2024-12-08 21:34:26,171 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_090.tif saved
+INFO 2024-12-08 21:34:26,171 run_yottixel.py <module> 105 Slide 90 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_091.tifTotal Elapsed Time: 69 minutes
+INFO 2024-12-08 21:34:54,994 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_091.tif saved
+INFO 2024-12-08 21:34:54,995 run_yottixel.py <module> 105 Slide 91 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_092.tifTotal Elapsed Time: 70 minutes
+INFO 2024-12-08 21:36:00,392 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_092.tif saved
+INFO 2024-12-08 21:36:00,392 run_yottixel.py <module> 105 Slide 92 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_093.tifTotal Elapsed Time: 71 minutes
+INFO 2024-12-08 21:36:34,216 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_093.tif saved
+INFO 2024-12-08 21:36:34,216 run_yottixel.py <module> 105 Slide 93 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_094.tifTotal Elapsed Time: 71 minutes
+INFO 2024-12-08 21:37:19,621 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_094.tif saved
+INFO 2024-12-08 21:37:19,621 run_yottixel.py <module> 105 Slide 94 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_095.tifTotal Elapsed Time: 72 minutes
+INFO 2024-12-08 21:38:00,232 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_095.tif saved
+INFO 2024-12-08 21:38:00,232 run_yottixel.py <module> 105 Slide 95 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_096.tifTotal Elapsed Time: 73 minutes
+INFO 2024-12-08 21:38:28,085 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_096.tif saved
+INFO 2024-12-08 21:38:28,086 run_yottixel.py <module> 105 Slide 96 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_097.tifTotal Elapsed Time: 73 minutes
+INFO 2024-12-08 21:39:17,907 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_097.tif saved
+INFO 2024-12-08 21:39:17,908 run_yottixel.py <module> 105 Slide 97 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_098.tifTotal Elapsed Time: 74 minutes
+INFO 2024-12-08 21:40:07,819 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_098.tif saved
+INFO 2024-12-08 21:40:07,819 run_yottixel.py <module> 105 Slide 98 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_099.tifTotal Elapsed Time: 75 minutes
+INFO 2024-12-08 21:41:03,848 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_099.tif saved
+INFO 2024-12-08 21:41:03,848 run_yottixel.py <module> 105 Slide 99 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_100.tifTotal Elapsed Time: 76 minutes
+INFO 2024-12-08 21:42:00,011 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_100.tif saved
+INFO 2024-12-08 21:42:00,012 run_yottixel.py <module> 105 Slide 100 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_101.tifTotal Elapsed Time: 77 minutes
+INFO 2024-12-08 21:43:00,055 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_101.tif saved
+INFO 2024-12-08 21:43:00,056 run_yottixel.py <module> 105 Slide 101 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_102.tifTotal Elapsed Time: 78 minutes
+INFO 2024-12-08 21:43:42,503 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_102.tif saved
+INFO 2024-12-08 21:43:42,503 run_yottixel.py <module> 105 Slide 102 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_103.tifTotal Elapsed Time: 78 minutes
+INFO 2024-12-08 21:44:18,170 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_103.tif saved
+INFO 2024-12-08 21:44:18,170 run_yottixel.py <module> 105 Slide 103 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_104.tifTotal Elapsed Time: 79 minutes
+INFO 2024-12-08 21:45:04,482 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_104.tif saved
+INFO 2024-12-08 21:45:04,482 run_yottixel.py <module> 105 Slide 104 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_105.tifTotal Elapsed Time: 80 minutes
+INFO 2024-12-08 21:46:28,754 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_105.tif saved
+INFO 2024-12-08 21:46:28,754 run_yottixel.py <module> 105 Slide 105 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_106.tifTotal Elapsed Time: 81 minutes
+INFO 2024-12-08 21:47:01,157 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_106.tif saved
+INFO 2024-12-08 21:47:01,158 run_yottixel.py <module> 105 Slide 106 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_107.tifTotal Elapsed Time: 82 minutes
+INFO 2024-12-08 21:47:29,832 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_107.tif saved
+INFO 2024-12-08 21:47:29,832 run_yottixel.py <module> 105 Slide 107 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_108.tifTotal Elapsed Time: 82 minutes
+INFO 2024-12-08 21:48:00,735 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_108.tif saved
+INFO 2024-12-08 21:48:00,735 run_yottixel.py <module> 105 Slide 108 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_109.tifTotal Elapsed Time: 83 minutes
+INFO 2024-12-08 21:48:53,407 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_109.tif saved
+INFO 2024-12-08 21:48:53,407 run_yottixel.py <module> 105 Slide 109 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_110.tifTotal Elapsed Time: 83 minutes
+INFO 2024-12-08 21:49:44,215 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_110.tif saved
+INFO 2024-12-08 21:49:44,215 run_yottixel.py <module> 105 Slide 110 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_111.tifTotal Elapsed Time: 84 minutes
+INFO 2024-12-08 21:50:20,840 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_111.tif saved
+INFO 2024-12-08 21:50:20,840 run_yottixel.py <module> 105 Slide 111 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_112.tifTotal Elapsed Time: 85 minutes
+INFO 2024-12-08 21:50:55,317 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_112.tif saved
+INFO 2024-12-08 21:50:55,317 run_yottixel.py <module> 105 Slide 112 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_113.tifTotal Elapsed Time: 86 minutes
+INFO 2024-12-08 21:52:04,380 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_113.tif saved
+INFO 2024-12-08 21:52:04,380 run_yottixel.py <module> 105 Slide 113 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_114.tifTotal Elapsed Time: 87 minutes
+INFO 2024-12-08 21:53:01,820 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_114.tif saved
+INFO 2024-12-08 21:53:01,820 run_yottixel.py <module> 105 Slide 114 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_115.tifTotal Elapsed Time: 88 minutes
+INFO 2024-12-08 21:53:29,235 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_115.tif saved
+INFO 2024-12-08 21:53:29,235 run_yottixel.py <module> 105 Slide 115 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_116.tifTotal Elapsed Time: 88 minutes
+INFO 2024-12-08 21:54:06,583 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_116.tif saved
+INFO 2024-12-08 21:54:06,583 run_yottixel.py <module> 105 Slide 116 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_117.tifTotal Elapsed Time: 89 minutes
+INFO 2024-12-08 21:54:44,507 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_117.tif saved
+INFO 2024-12-08 21:54:44,507 run_yottixel.py <module> 105 Slide 117 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_118.tifTotal Elapsed Time: 89 minutes
+INFO 2024-12-08 21:55:16,952 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_118.tif saved
+INFO 2024-12-08 21:55:16,952 run_yottixel.py <module> 105 Slide 118 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_119.tifTotal Elapsed Time: 90 minutes
+INFO 2024-12-08 21:55:45,947 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_119.tif saved
+INFO 2024-12-08 21:55:45,947 run_yottixel.py <module> 105 Slide 119 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_120.tifTotal Elapsed Time: 90 minutes
+INFO 2024-12-08 21:56:49,066 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_120.tif saved
+INFO 2024-12-08 21:56:49,066 run_yottixel.py <module> 105 Slide 120 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_121.tifTotal Elapsed Time: 91 minutes
+INFO 2024-12-08 21:57:23,136 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_121.tif saved
+INFO 2024-12-08 21:57:23,136 run_yottixel.py <module> 105 Slide 121 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_122.tifTotal Elapsed Time: 92 minutes
+INFO 2024-12-08 21:58:03,412 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_122.tif saved
+INFO 2024-12-08 21:58:03,413 run_yottixel.py <module> 105 Slide 122 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_123.tifTotal Elapsed Time: 93 minutes
+INFO 2024-12-08 21:58:34,356 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_123.tif saved
+INFO 2024-12-08 21:58:34,356 run_yottixel.py <module> 105 Slide 123 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_124.tifTotal Elapsed Time: 93 minutes
+INFO 2024-12-08 21:59:02,101 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_124.tif saved
+INFO 2024-12-08 21:59:02,101 run_yottixel.py <module> 105 Slide 124 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_125.tifTotal Elapsed Time: 94 minutes
+INFO 2024-12-08 21:59:54,035 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_125.tif saved
+INFO 2024-12-08 21:59:54,035 run_yottixel.py <module> 105 Slide 125 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_126.tifTotal Elapsed Time: 95 minutes
+INFO 2024-12-08 22:00:36,653 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_126.tif saved
+INFO 2024-12-08 22:00:36,653 run_yottixel.py <module> 105 Slide 126 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_127.tifTotal Elapsed Time: 95 minutes
+INFO 2024-12-08 22:01:55,734 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_127.tif saved
+INFO 2024-12-08 22:01:55,734 run_yottixel.py <module> 105 Slide 127 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_128.tifTotal Elapsed Time: 97 minutes
+INFO 2024-12-08 22:02:28,449 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_128.tif saved
+INFO 2024-12-08 22:02:28,449 run_yottixel.py <module> 105 Slide 128 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_129.tifTotal Elapsed Time: 97 minutes
+INFO 2024-12-08 22:02:58,410 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_129.tif saved
+INFO 2024-12-08 22:02:58,410 run_yottixel.py <module> 105 Slide 129 / 129 - ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_130.tifTotal Elapsed Time: 98 minutes
+INFO 2024-12-08 22:03:34,234 run_yottixel.py <module> 115 Bob object for slide ../../../../../../../mnt/data/nfs03-R6/CAMELYON16/images/test_130.tif saved
+INFO 2024-12-08 22:03:34,235 run_yottixel.py <module> 132 Starting the leave one out testing for 1
+INFO 2024-12-08 22:04:58,115 run_yottixel.py <module> 135 Leave one out testing done for 1
+INFO 2024-12-08 22:04:58,118 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2024-12-08 22:04:58,129 run_yottixel.py <module> 176 Report created
+INFO 2024-12-08 22:04:58,129 run_yottixel.py <module> 181 Report saved for top 1
+INFO 2024-12-08 22:04:58,129 run_yottixel.py <module> 132 Starting the leave one out testing for 3
+INFO 2024-12-08 22:06:21,909 run_yottixel.py <module> 135 Leave one out testing done for 3
+INFO 2024-12-08 22:06:21,911 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2024-12-08 22:06:21,916 run_yottixel.py <module> 176 Report created
+INFO 2024-12-08 22:06:21,916 run_yottixel.py <module> 181 Report saved for top 3
+INFO 2024-12-08 22:06:21,916 run_yottixel.py <module> 132 Starting the leave one out testing for 5
+INFO 2024-12-08 22:07:45,971 run_yottixel.py <module> 135 Leave one out testing done for 5
+INFO 2024-12-08 22:07:45,974 run_yottixel.py <module> 147 y_true, y_pred, sorted_labels and sorted_distances saved
+INFO 2024-12-08 22:07:45,979 run_yottixel.py <module> 176 Report created
+INFO 2024-12-08 22:07:45,979 run_yottixel.py <module> 181 Report saved for top 5
+INFO 2024-12-08 22:07:45,979 run_yottixel.py <module> 184 Ending the pipeline at Sun Dec  8 22:07:45 2024
