@@ -2,7 +2,7 @@
 ## Foundation Model Empowered Whole Slide Image Retrieval
 [Paper](https://openreview.net/forum?id=OebOkxEF7H)
 
-<img src=".github/pipeline.ng.pdf"/>
+<img src=".github/CLEAR-WSI_pipeline.pdf"/>
 
 # Datasets
 ## Slide Level
