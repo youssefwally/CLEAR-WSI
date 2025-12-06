@@ -1,14 +1,14 @@
 # CLEAR-WSI
-## Foundation Model Empowered Whole Slide Image Retrieval
+### Foundation Model Empowered Whole Slide Image Retrieval
 [Paper](https://openreview.net/forum?id=OebOkxEF7H)
 
 <img src=".github/CLEAR-WSI_pipeline.jpg"/>
 
 # Datasets
-## Slide Level
+### Slide Level
 1) [CAMELYON16](https://camelyon16.grand-challenge.org/)
 2) [BRACS](https://www.bracs.icar.cnr.it/)
-## Patch Level
+### Patch Level
 1) [MHIST](https://bmirds.github.io/MHIST/)
 2) [NCT-CRC-HE-100K](https://zenodo.org/records/1214456)
 
@@ -41,6 +41,14 @@
 |  | CLEAR-WSI (SR Prov-GigaPath) | 65.99 \| 65.89 | 52.18 \| 54.02 | _32.42 \| 36.78_ |
 |  | CLEAR-WSI (CI UNI) | **97.23 \| 98.93** | 41.39 \| 50.57 | 11.46 \| 14.94 |
 |  | CLEAR-WSI (SR UNI) | _89.07 \| 89.92_ | **66.98 \| 75.86** | **43.19 \| 51.72** |
+
+### Patch Retrieval Performance: NDCG ↑ (@k = 5)
+
+| @k | Pipeline | MHIST (NDCG) | CRC-VAL-HE-7K (NDCG) 
+|---|----------|------------------------------|---------------------------|
+| **5** | CLEAR-WSI (SR DeiT*) | 96.59 | 86.34 |
+|  | CLEAR-WSI (SR MoCov3*) | 98.42 | 95.87 |
+|  | CLEAR-WSI (SR UNI) | 94.31 | 99.95 |
 
 # Setup
 
