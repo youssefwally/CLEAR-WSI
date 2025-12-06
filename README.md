@@ -9,10 +9,8 @@
 1) [CAMELYON16](https://camelyon16.grand-challenge.org/)
 2) [BRACS](https://www.bracs.icar.cnr.it/)
 ## Patch Level
-1) [WSSS4LUAD](https://wsss4luad.grand-challenge.org/)
-2) [PatchCam](https://patchcamelyon.grand-challenge.org/)
-3) [MHIST](https://bmirds.github.io/MHIST/)
-4) [NCT-CRC-HE-100K](https://zenodo.org/records/1214456)
+1) [MHIST](https://bmirds.github.io/MHIST/)
+2) [NCT-CRC-HE-100K](https://zenodo.org/records/1214456)
 
 # Models
 1) [DeiT](https://github.com/facebookresearch/deit)
