@@ -1,10 +1,46 @@
-# Foundation Model for Histopathology
-==============================
-Creating a foundation model for pathology using self-supervised learning.
+# CLEAR-WSI
+## Foundation Model Empowered Whole Slide Image Retrieval
+[Paper](https://openreview.net/forum?id=OebOkxEF7H)
 
 # Datasets
-1) DigestPath (both signet ring cell and colonoscopy tissue segment)
-2) WSSS4LUAD
+## Slide Level
+1) [CAMELYON16](https://camelyon16.grand-challenge.org/)
+2) [BRACS](https://www.bracs.icar.cnr.it/)
+## Patch Level
+1) [WSSS4LUAD](https://wsss4luad.grand-challenge.org/)
+2) [PatchCam](https://patchcamelyon.grand-challenge.org/)
+3) [MHIST](https://bmirds.github.io/MHIST/)
+4) [NCT-CRC-HE-100K](https://zenodo.org/records/1214456)
+
+# Models
+1) [DeiT](https://github.com/facebookresearch/deit)
+2) [MoCo-V3](https://github.com/facebookresearch/moco-v3)
+3) [Prov-GigaPath](https://github.com/prov-gigapath/prov-gigapath)
+4) [UNI](https://github.com/mahmoodlab/UNI)
+
+# Results
+### WSI Retrieval Performance: Acc<sub>MV</sub> ↑ and NDCG ↑ (@k = 1, 3, 5)
+
+| @k | Pipeline | CAMELYON16 (NDCG \| Acc<sub>MV</sub>) | BRACS-1 (NDCG \| Acc<sub>MV</sub>) | BRACS-2 (NDCG \| Acc<sub>MV</sub>) |
+|---|----------|------------------------------|---------------------------|---------------------------|
+| **1** | Yottixel-K (SOTA) | 76.21 \| 75.96 | 49.91 \| 49.41 | 33.61 \| 32.94 |
+|  | CLEAR-WSI (SR DeiT*) | 69.30 \| 68.99 | 52.20 \| 51.72 | _38.93 \| 37.93_ |
+|  | CLEAR-WSI (SR MoCov3*) | 67.00 \| 66.67 | _54.48 \| 54.02_ | 28.30 \| 27.59 |
+|  | CLEAR-WSI (SR Prov-GigaPath) | 73.14 \| 72.87 | 51.06 \| 50.57 | 30.58 \| 29.89 |
+|  | CLEAR-WSI (CI UNI) | **96.93 \| 96.90** | 43.87 \| 43.68 | 10.53 \| 10.34 |
+|  | CLEAR-WSI (SR UNI) | _90.02 \| 89.92_ | **67.00 \| 66.67** | **44.24 \| 43.68** |
+| **3** | Yottixel-K (SOTA) | 74.59 \| 78.29 | 49.58 \| _54.12_ | 31.25 \| _36.47_ |
+|  | CLEAR-WSI (SR DeiT*) | 65.45 \| 67.44 | 51.47 \| 52.87 | 32.56 \| 34.48 |
+|  | CLEAR-WSI (SR MoCov3*) | 67.10 \| 72.09 | _54.45_ \| 50.47 | 28.81 \| 25.28 |
+|  | CLEAR-WSI (SR Prov-GigaPath) | 67.99 \| 71.32 | 51.20 \| 49.43 | _33.18 \| 35.63_ |
+|  | CLEAR-WSI (CI UNI) | **97.69 \| 99.22** | 42.02 \| 45.98 | 11.24 \| 16.09 |
+|  | CLEAR-WSI (SR UNI) | _89.56 \| 89.15_ | **66.82 \| 72.41** | **44.94 \| 48.28** |
+| **5** | Yottixel-K (SOTA) | 73.69 \| 77.49 | 48.64 \| 54.12 | 29.17 \| 36.47 |
+|  | CLEAR-WSI (SR DeiT*) | 65.84 \| 70.54 | 51.44 \| 57.47 | 31.48 \| 36.78 |
+|  | CLEAR-WSI (SR MoCov3*) | 67.07 \| 72.87 | _55.30 \| 62.07_ | 28.99 \| 29.89 |
+|  | CLEAR-WSI (SR Prov-GigaPath) | 65.99 \| 65.89 | 52.18 \| 54.02 | _32.42 \| 36.78_ |
+|  | CLEAR-WSI (CI UNI) | **97.23 \| 98.93** | 41.39 \| 50.57 | 11.46 \| 14.94 |
+|  | CLEAR-WSI (SR UNI) | _89.07 \| 89.92_ | **66.98 \| 75.86** | **43.19 \| 51.72** |
 
 # Setup
 
@@ -12,51 +48,27 @@ To make it easy for you to get started with our model, here's a list of recommen
 
 - [ ] Clone this repository into a local folder.
 ```
-
-cd local/path
-git clone https://gitlab.lrz.de/waly/fm_histopathology.git
+https://github.com/youssefwally/CLEAR-WSI.git
 ```
 - [ ] Setup the python virtual environement using `conda`.
 
 ```
-module load python/anaconda3
-cd environments 
-conda env create -f ./environments/20240322.yml
 
 ```
 
-# Model Architecture
-1) ViT
-
-
-# Hyperparameter search with Wandb Sweeps
-Initialize Sweep project from sweep_config.yaml file 
-```
-wandb sweep --project sweeps_mesh sweeps_config.yaml
-```
-
-# Model Training
-```
-cd src/models/[model_name]
-python ./train.py
-
-
-```
-# Results
-
-
-- [ ] Check the playground notebooks for usage examples
-```
-
-
-```
 # Authors and acknowledgment
 ```
-
+@inproceedings{
+wally2025clearwsi,
+title={{CLEAR}-{WSI}: Foundation Model Empowered Whole Slide Image Retrieval},
+author={Youssef Wally and Jingsong Liu and Elisabeth Wetzer and Peter J. Sch{\"u}ffler},
+booktitle={Submitted to Medical Imaging with Deep Learning},
+year={2025},
+url={https://openreview.net/forum?id=OebOkxEF7H},
+note={under review}
+}
 ```
 # License
 ```
 
-```
-## Project status
 ```
