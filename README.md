@@ -2,6 +2,8 @@
 ## Foundation Model Empowered Whole Slide Image Retrieval
 [Paper](https://openreview.net/forum?id=OebOkxEF7H)
 
+<img src=".github/pipeline.ng.pdf"/>
+
 # Datasets
 ## Slide Level
 1) [CAMELYON16](https://camelyon16.grand-challenge.org/)
@@ -57,7 +59,7 @@ https://github.com/youssefwally/CLEAR-WSI.git
 ```
 
 # Authors and acknowledgment
-```
+```bibtex
 @inproceedings{
 wally2025clearwsi,
 title={{CLEAR}-{WSI}: Foundation Model Empowered Whole Slide Image Retrieval},
