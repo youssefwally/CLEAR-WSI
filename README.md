@@ -1,6 +1,6 @@
 # CLEAR-WSI
 ### Foundation Model Empowered Whole Slide Image Retrieval
-[Paper](https://openreview.net/forum?id=OebOkxEF7H)
+[Paper](https://openreview.net/forum?id=gUirdyBi4f)
 
 <img src=".github/CLEAR-WSI_pipeline.jpg"/>
 
@@ -50,33 +50,11 @@
 |  | CLEAR-WSI (SR MoCov3*) | 98.42 | 95.87 |
 |  | CLEAR-WSI (SR UNI) | 94.31 | 99.95 |
 
-# Setup
-
-To make it easy for you to get started with our model, here's a list of recommended next steps:
-
-- [ ] Clone this repository into a local folder.
-```
-https://github.com/youssefwally/CLEAR-WSI.git
-```
-- [ ] Setup the python virtual environement using `conda`.
-
-```
-
-```
-
 # Authors and acknowledgment
 ```bibtex
-@inproceedings{
-wally2025clearwsi,
-title={{CLEAR}-{WSI}: Foundation Model Empowered Whole Slide Image Retrieval},
-author={Youssef Wally and Jingsong Liu and Elisabeth Wetzer and Peter J. Sch{\"u}ffler},
-booktitle={Submitted to Medical Imaging with Deep Learning},
-year={2025},
-url={https://openreview.net/forum?id=OebOkxEF7H},
-note={under review}
+@inproceedings{liuclear,
+  title={CLEAR-WSI: Towards Foundation Model Empowered Diagnosis Aligned Whole Slide Image Retrieval},
+  author={Liu, Jingsong and Wally, Youssef and Li, Han and Zhou, Weiwei and Dai, Jing and Wetzer, Elisabeth and Sch{\"u}ffler, Peter J},
+  booktitle={MICCAI Workshop on Computational Pathology with Multimodal Data (COMPAYL)}
 }
-```
-# License
-```
-
 ```
