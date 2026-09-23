@@ -54,7 +54,7 @@
 ```bibtex
 @inproceedings{wallyclear,
   title={CLEAR-WSI: Towards Foundation Model Empowered Diagnosis Aligned Whole Slide Image Retrieval},
-  author={Wally, Youssef and Liu, Jingsong and Li, Han and Zhou, Weiwei and Dai, Jing and Wetzer, Elisabeth and Sch{\"u}ffler, Peter J},
+  author={Wally, Youssef and Liu, Jingsong and Li, Han and Dai, Jing and Wetzer, Elisabeth and Sch{\"u}ffler, Peter J},
   booktitle={MICCAI Workshop on Computational Pathology with Multimodal Data (COMPAYL)}
 }
 ```
